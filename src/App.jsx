@@ -1,12 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import ProblemStatements from './pages/ProblemStatements';
-import Guidelines from './pages/Guidelines';
-import Committees from './pages/Committees';
-import IdeaSubmission from './pages/IdeaSubmission';
-import Archives from './pages/Archives';
-import VantaBackground from './components/VantaBackground';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import ProblemStatements from "./pages/ProblemStatements";
+import Guidelines from "./pages/Guidelines";
+import Committees from "./pages/Committees";
+import IdeaSubmission from "./pages/IdeaSubmission";
+import Archives from "./pages/Archives";
+import VantaBackground from "./components/VantaBackground";
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/committees" element={<Committees />} />
               <Route path="/submit" element={<IdeaSubmission />} />
               <Route path="/archives" element={<Archives />} />
+              <Route path="/faq" element={<FAQ />} />
             </Routes>
           </main>
         </div>
