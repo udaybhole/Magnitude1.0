@@ -261,22 +261,23 @@ function Committees() {
       className="min-h-screen py-16 px-4"
     >
       <div className="max-w-[1400px] mx-auto">
+        {/* Main Heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-          <h1 className="text-4xl md:text-6xl font-['SpaceMission'] text-blue-light tracking-wider mb-4">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-blue-light tracking-wider mb-2 sm:mb-4">
             COMMITTEES
           </h1>
-          <p className="text-xl font-['SpaceShards'] text-blue-pale">
+          <p className="text-base xs:text-lg sm:text-xl md:text-2xl font-['SpaceShards'] text-blue-pale">
             Meet our team
           </p>
         </motion.div>
 
         {/* Faculty Coordinators */}
         <section className="mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-['SpaceShards'] text-center mb-6 sm:mb-8 text-blue-light">
+          <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['SpaceShards'] text-center mb-4 sm:mb-6 lg:mb-8 text-blue-light">
             Faculty Coordinators
           </h2>
           <div className="flex justify-center">
@@ -284,10 +285,10 @@ function Committees() {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="grid gap-4 sm:gap-6 lg:gap-8 w-full max-w-6xl px-2 sm:px-4"
+              className="grid gap-4 sm:gap-6 lg:gap-8 w-full max-w-6xl"
               style={{
-                gridTemplateColumns: 'repeat(auto-fit, minmax(240px, max-content))',
-                justifyContent: 'center'
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
+                justifyItems: 'center'
               }}
             >
               {committees.faculty.map((member, index) => (
@@ -298,8 +299,8 @@ function Committees() {
         </section>
 
         {/* Organizing Committee */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-['SpaceShards'] text-center mb-8 text-blue-light">
+        <section className="mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['SpaceShards'] text-center mb-4 sm:mb-6 lg:mb-8 text-blue-light">
             Organizing Committee
           </h2>
           <div className="flex justify-center">
@@ -322,7 +323,7 @@ function Committees() {
 
         {/* Web Committee */}
         <section>
-          <h2 className="text-2xl md:text-3xl font-['SpaceShards'] text-center mb-8 text-blue-light">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['SpaceShards'] text-center mb-4 sm:mb-6 lg:mb-8 text-blue-light">
             Web Committee
           </h2>
           <div className="flex justify-center">

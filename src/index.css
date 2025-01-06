@@ -30,3 +30,44 @@ body {
 .perspective-[1000px] {
   perspective: 1000px;
 }
+
+@layer components {
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-8 sm:py-12 lg:py-16;
+  }
+
+  .responsive-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8;
+  }
+}
+
+/* Add responsive text utilities */
+.responsive-text {
+  @apply text-base sm:text-lg lg:text-xl;
+}
+
+.responsive-heading {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+}
+
+.responsive-subheading {
+  @apply text-xl sm:text-2xl md:text-3xl;
+}
+
+@layer utilities {
+  .responsive-page-title {
+    @apply text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-blue-light tracking-wider;
+  }
+  
+  .responsive-subtitle {
+    @apply text-base xs:text-lg sm:text-xl md:text-2xl font-['SpaceShards'] text-blue-pale;
+  }
+  
+  .responsive-section-title {
+    @apply text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['SpaceShards'] text-blue-light;
+  }
+}
