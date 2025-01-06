@@ -8,6 +8,7 @@ import IdeaSubmission from "./pages/IdeaSubmission";
 import Archives from "./pages/Archives";
 import VantaBackground from "./components/VantaBackground";
 import FAQ from "./pages/FAQ";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
             </Routes>
           </main>
+          <Footer />
         </div>
       </div>
     </Router>

@@ -1,6 +1,8 @@
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect, useState } from "react";
 import trophyLogo from "../assets/trophy-star.png";
+import { BsCalendar2Check, BsLightbulb, BsTrophy } from 'react-icons/bs';
+import { FaCode, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Home() {
   const magnitudeText = "MAGNITUDE";
@@ -14,14 +16,6 @@ function Home() {
       count: 25,
       transition: {
         duration: 2,
-        ease: "easeOut",
-      },
-    });
-
-    prizeControls.start({
-      count: 100000,
-      transition: {
-        duration: 2.5,
         ease: "easeOut",
       },
     });
@@ -106,87 +100,185 @@ function Home() {
         </motion.div>
       </div>
 
-      {/* Timeline Section - Update spacing and sizing */}
-      <div className="max-w-4xl mx-auto section-padding container-padding">
-        <h2 className="text-4xl font-space-shards text-center mb-16 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale bg-clip-text text-transparent">
-          Event Timeline
-        </h2>
+      {/* Timeline Section */}
+      <div className="max-w-5xl mx-auto py-20 px-4">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-['VerminVibesV'] text-center mb-16 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale bg-clip-text text-transparent"
+        >
+          EVENT TIMELINE
+        </motion.h2>
 
         <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-light via-blue-bright to-blue-pale"></div>
+          {/* Vertical Line - Adjusted for mobile */}
+          <div className="absolute left-4 md:left-1/2 h-full w-px bg-gradient-to-b from-blue-light via-blue-bright to-blue-pale" />
 
           {/* Timeline Items */}
-          <div className="space-y-20">
-            {/* Item 1 */}
+          <div className="space-y-16">
+            {/* Registration Phase */}
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative flex flex-col md:flex-row items-center md:justify-between"
+              className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between group pl-12 md:pl-0"
             >
               <div className="flex-1 md:text-right md:pr-8">
-                <h3 className="text-3xl font-space-shards text-blue-light mb-2">
-                  01
-                </h3>
-                <h4 className="text-xl font-space-shards mb-2">
-                  Problem Statement Submission
-                </h4>
-                <p className="text-gray-400 font-space-shards">
-                  Submit your innovative solutions
-                </p>
+                <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border border-blue-light/20 transition-all duration-300 hover:border-blue-light/50 group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:ml-auto md:w-[380px]">
+                  <div className="flex items-center md:justify-end gap-3 mb-4">
+                    <h3 className="text-3xl font-['VerminVibesV'] text-blue-light tracking-wider">
+                      PHASE 01
+                    </h3>
+                    <BsCalendar2Check className="text-2xl text-blue-pale" />
+                  </div>
+                  <h4 className="text-xl font-['SpaceShards'] text-blue-pale mb-2">
+                    Registration & Idea Submission
+                  </h4>
+                  <p className="text-gray-400 mb-3">
+                    26th January - 15th February 2024
+                  </p>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li className="flex items-center md:justify-end gap-2">
+                      <span>Team Formation & Registration</span>
+                      <span className="text-blue-light">•</span>
+                    </li>
+                    <li className="flex items-center md:justify-end gap-2">
+                      <span>Problem Statement Selection</span>
+                      <span className="text-blue-light">•</span>
+                    </li>
+                    <li className="flex items-center md:justify-end gap-2">
+                      <span>Initial Proposal Submission</span>
+                      <span className="text-blue-light">•</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className="w-4 h-4 bg-blue-light rounded-full relative z-10 my-4 md:my-0"></div>
-              <div className="flex-1 md:pl-8 md:invisible"></div>
+
+              {/* Timeline Node - Without hover effect */}
+              <div className="absolute left-0 top-3 md:static md:my-0 z-10">
+                <div className="w-4 h-4 bg-blue-light rounded-full" />
+              </div>
+
+              <div className="flex-1 md:pl-8 md:invisible" />
             </motion.div>
 
-            {/* Item 2 */}
+            {/* Evaluation Phase */}
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative flex flex-col md:flex-row items-center md:justify-between"
+              className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between group pl-12 md:pl-0"
             >
-              <div className="flex-1 md:invisible"></div>
-              <div className="w-4 h-4 bg-blue-bright rounded-full relative z-10 my-4 md:my-0"></div>
+              <div className="flex-1 md:invisible" />
+
+              {/* Timeline Node - Without hover effect */}
+              <div className="absolute left-0 top-3 md:static md:my-0 z-10">
+                <div className="w-4 h-4 bg-blue-bright rounded-full" />
+              </div>
+
               <div className="flex-1 md:pl-8">
-                <h3 className="text-3xl font-space-shards text-blue-bright mb-2 md:text-left">
-                  02
-                </h3>
-                <h4 className="text-xl font-space-shards mb-2 md:text-left">
-                  Online Evaluation
-                </h4>
-                <p className="text-gray-400 font-space-shards md:text-left">
-                  Expert review and selection process
-                </p>
+                <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border border-blue-bright/20 transition-all duration-300 hover:border-blue-bright/50 group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:w-[380px]">
+                  <div className="flex items-center gap-3 mb-4">
+                    <h3 className="text-3xl font-['VerminVibesV'] text-blue-bright tracking-wider">
+                      PHASE 02
+                    </h3>
+                    <BsLightbulb className="text-2xl text-blue-pale" />
+                  </div>
+                  <h4 className="text-xl font-['SpaceShards'] text-blue-pale mb-2">
+                    Online Evaluation
+                  </h4>
+                  <p className="text-gray-400 mb-3">
+                    20th February - 25th February 2024
+                  </p>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• Expert Review Process</li>
+                    <li>• Shortlisting of Teams</li>
+                    <li>• Feedback & Improvements</li>
+                  </ul>
+                </div>
               </div>
             </motion.div>
 
-            {/* Item 3 */}
+            {/* Development Phase */}
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative flex flex-col md:flex-row items-center md:justify-between"
+              className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between group pl-12 md:pl-0"
             >
               <div className="flex-1 md:text-right md:pr-8">
-                <h3 className="text-3xl font-space-shards text-blue-pale mb-2">
-                  03
-                </h3>
-                <h4 className="text-xl font-space-shards mb-2">Grand Finale</h4>
-                <p className="text-gray-400 font-space-shards">
-                  Final presentation and awards ceremony
-                </p>
+                <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border border-blue-pale/20 transition-all duration-300 hover:border-blue-pale/50 group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:ml-auto md:w-[380px]">
+                  <div className="flex items-center md:justify-end gap-3 mb-4">
+                    <h3 className="text-3xl font-['VerminVibesV'] text-blue-pale tracking-wider">
+                      PHASE 03
+                    </h3>
+                    <FaCode className="text-2xl text-blue-pale" />
+                  </div>
+                  <h4 className="text-xl font-['SpaceShards'] text-blue-pale mb-2">
+                    Development & Mentoring
+                  </h4>
+                  <p className="text-gray-400 mb-3">
+                    1st March - 10th March 2024
+                  </p>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• Prototype Development</li>
+                    <li>• Mentor Guidance</li>
+                    <li>• Progress Tracking</li>
+                  </ul>
+                </div>
               </div>
-              <div className="w-4 h-4 bg-blue-pale rounded-full relative z-10 my-4 md:my-0"></div>
-              <div className="flex-1 md:pl-8 md:invisible"></div>
+
+              {/* Timeline Node - Without hover effect */}
+              <div className="absolute left-0 top-3 md:static md:my-0 z-10">
+                <div className="w-4 h-4 bg-blue-pale rounded-full" />
+              </div>
+
+              <div className="flex-1 md:pl-8 md:invisible" />
+            </motion.div>
+
+            {/* Final Phase */}
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between group pl-12 md:pl-0"
+            >
+              <div className="flex-1 md:invisible" />
+
+              {/* Timeline Node - Without hover effect */}
+              <div className="absolute left-0 top-3 md:static md:my-0 z-10">
+                <div className="w-4 h-4 bg-blue-light rounded-full" />
+              </div>
+
+              <div className="flex-1 md:pl-8">
+                <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border border-blue-light/20 transition-all duration-300 hover:border-blue-light/50 group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:w-[380px]">
+                  <div className="flex items-center gap-3 mb-4">
+                    <h3 className="text-3xl font-['VerminVibesV'] text-blue-light tracking-wider">
+                      FINAL PHASE
+                    </h3>
+                    <BsTrophy className="text-2xl text-blue-pale" />
+                  </div>
+                  <h4 className="text-xl font-['SpaceShards'] text-blue-pale mb-2">
+                    Grand Finale
+                  </h4>
+                  <p className="text-gray-400 mb-3">
+                    15th March 2024
+                  </p>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• Final Presentations</li>
+                    <li>• Project Exhibition</li>
+                    <li>• Winners Announcement</li>
+                  </ul>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
       </div>
 
-      {/* Prize Pool Section - Update spacing and sizing */}
-      <div className="max-w-4xl mx-auto section-padding container-padding">
+      {/* Prize Pool Section */}
+      <div className="max-w-4xl mx-auto section-padding container-padding text-center">
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
@@ -205,7 +297,7 @@ function Home() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-space-shards mb-4 text-blue-light"
+          className="text-3xl md:text-4xl font-space-shards mb-4 text-blue-light text-center"
         >
           WIN PRIZE POOL OF
         </motion.h2>
@@ -213,8 +305,22 @@ function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="relative text-5xl md:text-7xl font-space-shards"
+          viewport={{ 
+            once: true,
+            amount: 0.8
+          }}
+          onViewportEnter={() => {
+            if (prizeCount === 0) {
+              prizeControls.start({
+                count: 100000,
+                transition: {
+                  duration: 2.5,
+                  ease: "easeOut",
+                },
+              });
+            }
+          }}
+          className="relative text-5xl md:text-7xl font-space-shards flex justify-center items-center"
         >
           <span className="text-[#FFD700]">₹</span>
           <motion.span
@@ -232,8 +338,56 @@ function Home() {
             className="absolute bottom-0 left-0 h-1 bg-[#FFD700]"
           />
         </motion.div>
+        
+      </div>
+
+      {/* Venue Section */}
+      <div className="max-w-4xl mx-auto py-20 px-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", bounce: 0.4 }}
+            className="flex justify-center"
+          >
+            <FaMapMarkerAlt className="w-16 h-16 text-blue-light opacity-80" />
+          </motion.div>
+
+          <h3 className="text-xl font-['SpaceShards'] text-blue-light tracking-wider">
+            VENUE
+          </h3>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-4xl md:text-5xl font-['SpaceMission'] bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale bg-clip-text text-transparent"
+          >
+            DYPCOE, PUNE
+          </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="text-gray-400 space-y-2"
+          >
+            <p>Dr. D.Y. Patil College of Engineering</p>
+            <p>Sector 29, Nigdi Pradhikaran</p>
+            <p>Akurdi, Pune - 411044</p>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
+    
   );
 }
 

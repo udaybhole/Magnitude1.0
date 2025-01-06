@@ -47,12 +47,12 @@ function Committees() {
         instagram: "https://instagram.com"
       },
       {
-        name: "Alex Chen",
+        name: "Jagdish Raut",
         role: "Web Developer",
-        image: "/committee/alex-chen.jpg",
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        instagram: "https://instagram.com"
+        image: "/jagdish.jpg",
+        github: "https://github.com/Jagdish2004",
+        linkedin: "https://www.linkedin.com/in/jagdish-raut-bba036259/",
+        instagram: "https://instagram.com/jagdish.2004"
       },
       {
         name: "Emma Wilson",
