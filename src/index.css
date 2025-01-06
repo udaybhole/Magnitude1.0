@@ -13,3 +13,14 @@ body {
 .glass {
   @apply bg-white/10 backdrop-blur-lg;
 }
+
+@font-face {
+  font-family: 'SpaceMission';
+  src: url('/VerminVibesV-Zlg3.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.perspective-[1000px] {
+  perspective: 1000px;
+}
