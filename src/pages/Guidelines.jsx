@@ -108,10 +108,10 @@ function Guidelines() {
             className="relative group"
           >
             {/* Gradient border effect */}
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl blur opacity-20 group-hover:opacity-50 transition duration-300"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
             
-            <div className="relative bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-blue-light/20">
-              <h2 className="text-2xl font-['PrinceofpersiaRegular'] text-blue-pale mb-4">
+            <div className="relative bg-black p-6 rounded-xl border border-blue-light/20">
+              <h2 className="text-2xl font-['PrinceofpersiaRegular'] text-white mb-4">
                 {section.title}
               </h2>
               <ul className="space-y-3">

@@ -258,12 +258,21 @@ function Committees() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="py-4 sm:py-6 lg:py-8 px-3 sm:px-4 lg:px-6 mt-16 sm:mt-20 lg:mt-24"
+      className="min-h-screen py-16 px-4"
     >
       <div className="max-w-[1400px] mx-auto">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-['SpaceShards'] text-center mb-8 sm:mb-12 text-blue-light">
-          Committees
-        </h1>
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-4xl md:text-6xl font-['SpaceMission'] text-blue-light tracking-wider mb-4">
+            COMMITTEES
+          </h1>
+          <p className="text-xl font-['SpaceShards'] text-blue-pale">
+            Meet our team
+          </p>
+        </motion.div>
 
         {/* Faculty Coordinators */}
         <section className="mb-8 sm:mb-12 lg:mb-16">
