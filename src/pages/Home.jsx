@@ -188,7 +188,7 @@ function Home() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-space-shards mb-4 text-white"
+          className="text-3xl md:text-4xl font-space-shards mb-4 text-blue-light"
         >
           WIN PRIZE POOL OF
         </motion.h2>
@@ -215,87 +215,6 @@ function Home() {
             className="absolute bottom-0 left-0 h-1 bg-[#FFD700]"
           />
         </motion.div>
-      </div>
-
-      {/* About Us Section */}
-      <div className="max-w-4xl mx-auto py-20 px-4">
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-4xl font-space-shards text-center mb-16 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale bg-clip-text text-transparent"
-        >
-          About Us
-        </motion.h2>
-
-        <div className="space-y-12">
-          {/* College Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center space-y-6"
-          >
-            <h3 className="text-2xl md:text-3xl font-space-shards text-blue-light mb-4">
-              D. Y. Patil College of Engineering
-            </h3>
-            <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              D. Y. Patil College of Engineering, Pune, established in 1984, is a premier engineering institution 
-              known for its excellence in technical education. The college offers various undergraduate and 
-              postgraduate programs in engineering and technology, fostering innovation and academic excellence. 
-              With state-of-the-art infrastructure and experienced faculty, DYPCOE has been consistently 
-              producing industry-ready professionals.
-            </p>
-          </motion.div>
-
-          {/* Magnitude Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center space-y-6"
-          >
-            <h3 className="text-2xl md:text-3xl font-space-shards text-blue-light mb-4">
-              Magnitude Hackathon
-            </h3>
-            <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              MAGNITUDE 2K25 is an innovative hackathon that brings together creative minds to solve real-world 
-              challenges. This 24-hour coding marathon provides a platform for participants to showcase their 
-              technical prowess, problem-solving abilities, and innovative thinking. With exciting problem 
-              statements, mentorship opportunities, and substantial prizes, Magnitude aims to foster innovation 
-              and technological advancement among young engineers.
-            </p>
-            <div className="flex flex-wrap justify-center gap-8 mt-8">
-              <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
-                className="text-center px-6 py-4 bg-blue-darker rounded-lg"
-              >
-                <h4 className="text-blue-light font-space-shards text-xl mb-2">24 Hours</h4>
-                <p className="text-gray-400">Non-Stop Innovation</p>
-              </motion.div>
-              <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
-                className="text-center px-6 py-4 bg-blue-darker rounded-lg"
-              >
-                <h4 className="text-blue-light font-space-shards text-xl mb-2">Expert Mentors</h4>
-                <p className="text-gray-400">Industry Guidance</p>
-              </motion.div>
-              <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
-                className="text-center px-6 py-4 bg-blue-darker rounded-lg"
-              >
-                <h4 className="text-blue-light font-space-shards text-xl mb-2">Real Problems</h4>
-                <p className="text-gray-400">Practical Solutions</p>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
       </div>
     </div>
   );
