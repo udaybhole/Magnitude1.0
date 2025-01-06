@@ -42,9 +42,9 @@ function Committees() {
         name: "Dinesh Aher",
         role: "Web Developer",
         image: "/dinesh.jpg",
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        instagram: "https://instagram.com"
+        github: "https://github.com/Dinesh-dypcoe",
+        linkedin: "https://www.linkedin.com/in/dineshaher/",
+        instagram: "https://instagram.com/dinesh_aher2505"
       },
       {
         name: "Jagdish Raut",

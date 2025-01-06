@@ -40,6 +40,8 @@ function ProblemStatements() {
     }
   ];
 
+  const registrationFormUrl = "https://your-google-form-url-here";
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -90,35 +92,110 @@ function ProblemStatements() {
           >
             <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
             
-            <div className="relative bg-black p-6 rounded-xl border border-blue-light/20 h-full">
-              <div className="inline-block px-3 py-1 rounded-full bg-blue-light/10 border border-blue-light/30 text-blue-light font-['SpaceShards'] text-sm mb-4">
-                {problem.track}
+            <div className="relative bg-black p-6 rounded-xl border border-blue-light/20 h-full flex flex-col">
+              <div className="flex-grow">
+                <div className="inline-block px-3 py-1 rounded-full bg-blue-light/10 border border-blue-light/30 text-blue-light font-['SpaceShards'] text-sm mb-4">
+                  {problem.track}
+                </div>
+                
+                <h3 className="text-2xl font-['PrinceofpersiaRegular'] text-white mb-4">
+                  {problem.title}
+                </h3>
+                
+                <p className="text-gray-300 mb-6 font-['SpaceShards']">
+                  {problem.description}
+                </p>
+                
+                <div>
+                  <h4 className="text-blue-light font-['VerminVibesV'] mb-3 tracking-wide">
+                    Key Objectives:
+                  </h4>
+                  <ul className="space-y-2">
+                    {problem.objectives.map((objective, index) => (
+                      <li key={index} className="flex items-start gap-2 text-gray-300 font-['SpaceShards']">
+                        <span className="text-blue-light">•</span>
+                        {objective}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              
-              <h3 className="text-2xl font-['PrinceofpersiaRegular'] text-white mb-4">
-                {problem.title}
-              </h3>
-              
-              <p className="text-gray-300 mb-6 font-['SpaceShards']">
-                {problem.description}
-              </p>
-              
-              <div>
-                <h4 className="text-blue-light font-['VerminVibesV'] mb-3 tracking-wide">
-                  Key Objectives:
-                </h4>
-                <ul className="space-y-2">
-                  {problem.objectives.map((objective, index) => (
-                    <li key={index} className="flex items-start gap-2 text-gray-300 font-['SpaceShards']">
-                      <span className="text-blue-light">•</span>
-                      {objective}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
+              <motion.a
+                href={registrationFormUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 w-full inline-flex items-center justify-center px-6 py-3 rounded-xl
+                  bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale
+                  text-black font-['SpaceShards'] font-semibold
+                  transform transition-all duration-300
+                  hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-light/25
+                  active:scale-[0.98]"
+                whileHover={{ y: -2 }}
+                whileTap={{ y: 0 }}
+              >
+                Register Here
+              </motion.a>
             </div>
           </motion.div>
         ))}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-16 max-w-2xl mx-auto"
+      >
+        <div className="relative group cursor-pointer">
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
+          
+          <a 
+            href="/ideatemplate.pptx" 
+            download
+            className="relative block bg-black p-8 rounded-xl border border-blue-light/20"
+          >
+            <div className="flex flex-col items-center text-center space-y-4">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-16 h-16 bg-blue-light/10 rounded-full flex items-center justify-center"
+              >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  className="h-8 w-8 text-blue-light"
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2} 
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
+                  />
+                </svg>
+              </motion.div>
+              
+              <div>
+                <h3 className="text-2xl font-['SpaceShards'] text-blue-light mb-2">
+                  Download Template
+                </h3>
+                <p className="text-gray-300 font-['SpaceShards'] text-sm sm:text-base">
+                  Get the official PPT template for your idea submission
+                </p>
+              </div>
+
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="mt-4 px-6 py-2 bg-blue-light/10 hover:bg-blue-light/20 rounded-full border border-blue-light/30 text-blue-pale transition-all duration-300"
+              >
+                Download PPT Template
+              </motion.div>
+            </div>
+          </a>
+        </div>
       </motion.div>
     </div>
   );

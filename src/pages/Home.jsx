@@ -1,4 +1,4 @@
-import { motion, useAnimationControls } from "framer-motion";
+import { motion, useAnimationControls, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import trophyLogo from "../assets/trophy-star.png";
 import { BsCalendar2Check, BsLightbulb, BsTrophy } from 'react-icons/bs';
@@ -10,6 +10,7 @@ function Home() {
   const [prizeCount, setPrizeCount] = useState(0);
   const controls = useAnimationControls();
   const prizeControls = useAnimationControls();
+  const [showUpdates, setShowUpdates] = useState(false);
 
   useEffect(() => {
     controls.start({
@@ -49,6 +50,30 @@ function Home() {
       },
     },
   };
+
+  const updates = [
+    {
+      date: "15 Jan 2024",
+      title: "Registration Date Extended",
+      description: "Registration deadline has been extended to 26th January 2024."
+    },
+    {
+      date: "12 Jan 2024",
+      title: "New Problem Statement Added",
+      description: "A new problem statement in the AI/ML track has been added. Check the Problems page for details."
+    },
+    {
+      date: "10 Jan 2024",
+      title: "PPT Template Available",
+      description: "The official presentation template is now available for download."
+    },
+    {
+      date: "8 Jan 2024",
+      title: "Mentorship Program",
+      description: "Industry experts will be providing mentorship during the development phase."
+    },
+    // Add more updates as needed
+  ];
 
   return (
     <div className="relative min-h-screen">
@@ -99,6 +124,114 @@ function Home() {
           </h1>
         </motion.div>
       </div>
+
+      {/* Updates Section - Add this before Timeline */}
+      <div className="max-w-5xl mx-auto py-20 px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative group cursor-pointer"
+          onClick={() => setShowUpdates(true)}
+        >
+          {/* Gradient border effect */}
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
+          
+          <div className="relative bg-black p-8 rounded-xl border border-blue-light/20">
+            <div className="flex items-center justify-between">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-['VerminVibesV'] text-blue-light mb-2 tracking-wider">
+                  UPDATES
+                </h2>
+                <p className="text-gray-300 font-['SpaceShards']">
+                  Click to check latest announcements
+                </p>
+              </div>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-2 bg-blue-light/10 hover:bg-blue-light/20 rounded-full 
+                  border border-blue-light/30 text-blue-pale transition-all duration-300"
+              >
+                Check Updates
+              </motion.button>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Updates Modal */}
+      <AnimatePresence>
+        {showUpdates && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center px-4"
+            onClick={() => setShowUpdates(false)}
+          >
+            {/* Modal Backdrop */}
+            <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+
+            {/* Modal Content */}
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative bg-black/90 rounded-xl border border-blue-light/20 p-6 md:p-8 
+                max-w-2xl w-full max-h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-blue-light/20
+                scrollbar-track-transparent"
+            >
+              <h2 className="text-3xl font-['VerminVibesV'] text-blue-light mb-6 sticky top-0 
+                bg-black/90 py-2 border-b border-blue-light/20 tracking-wider">
+                LATEST UPDATES
+              </h2>
+
+              <div className="space-y-6">
+                {updates.map((update, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="border-l-2 border-blue-light/20 pl-4 py-2"
+                  >
+                    <div className="text-blue-pale font-['SpaceShards'] text-sm mb-1">
+                      {update.date}
+                    </div>
+                    <h3 className="text-xl font-['SpaceShards'] text-blue-light mb-2">
+                      {update.title}
+                    </h3>
+                    <p className="text-gray-300 font-['SpaceShards']">
+                      {update.description}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Close Button */}
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setShowUpdates(false)}
+                className="absolute top-4 right-4 p-2 rounded-full bg-blue-light/10 
+                  hover:bg-blue-light/20 text-blue-pale transition-all duration-300"
+              >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  className="h-6 w-6" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </motion.button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Timeline Section */}
       <div className="max-w-5xl mx-auto py-20 px-4">
