@@ -16,7 +16,7 @@ function App() {
         <VantaBackground />
         <div className="relative z-10">
           <Navbar />
-          <main className="container mx-auto px-4">
+          <main className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/problems" element={<ProblemStatements />} />

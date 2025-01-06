@@ -68,10 +68,10 @@ function ProblemStatements() {
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-12"
       >
-        <h1 className="text-4xl md:text-6xl font-['SpaceMission'] text-blue-light tracking-wider mb-4">
+        <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-blue-light tracking-wider mb-2 sm:mb-4">
           PROBLEM STATEMENTS
         </h1>
-        <p className="text-xl font-['SpaceShards'] text-blue-pale">
+        <p className="text-base xs:text-lg sm:text-xl md:text-2xl font-['SpaceShards'] text-blue-pale">
           Choose your challenge and innovate
         </p>
       </motion.div>

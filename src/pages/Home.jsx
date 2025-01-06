@@ -58,15 +58,16 @@ function Home() {
 
   return (
     <div className="relative min-h-screen">
-      <div className="flex items-center justify-center min-h-screen">
+      {/* Hero Section */}
+      <div className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="text-center"
+          className="text-center w-full max-w-4xl mx-auto"
         >
-          <h1 className="flex flex-col items-center gap-6">
-            <span className="text-4xl md:text-5xl font-['SpaceMission'] tracking-[0.2em] text-blue-light">
+          <h1 className="flex flex-col items-center gap-4 sm:gap-6">
+            <span className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-['SpaceMission'] tracking-[0.2em] text-blue-light">
               DYPCOE
             </span>
             <div className="relative perspective-[1000px]">
@@ -75,7 +76,7 @@ function Home() {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="relative text-7xl md:text-[8rem] font-['SpaceMission'] leading-none my-4 px-4 flex overflow-hidden"
+                className="relative text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] font-['SpaceMission'] leading-none my-4 px-4 flex overflow-hidden"
               >
                 {magnitudeText.split("").map((letter, index) => (
                   <motion.span
@@ -92,7 +93,7 @@ function Home() {
                 ))}
               </motion.div>
             </div>
-            <span className="text-4xl md:text-5xl font-['SpaceMission'] tracking-[0.2em] text-blue-light flex items-center">
+            <span className="text-3xl xs:text-4xl md:text-5xl font-['SpaceMission'] tracking-[0.2em] text-blue-light flex items-center">
               2K
               <motion.span
                 animate={controls}
@@ -105,8 +106,8 @@ function Home() {
         </motion.div>
       </div>
 
-      {/* Timeline Section */}
-      <div className="max-w-4xl mx-auto py-20 px-4">
+      {/* Timeline Section - Update spacing and sizing */}
+      <div className="max-w-4xl mx-auto section-padding container-padding">
         <h2 className="text-4xl font-space-shards text-center mb-16 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale bg-clip-text text-transparent">
           Event Timeline
         </h2>
@@ -184,8 +185,8 @@ function Home() {
         </div>
       </div>
 
-      {/* Prize Pool Section */}
-      <div className="max-w-4xl mx-auto py-20 px-4 text-center">
+      {/* Prize Pool Section - Update spacing and sizing */}
+      <div className="max-w-4xl mx-auto section-padding container-padding">
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
