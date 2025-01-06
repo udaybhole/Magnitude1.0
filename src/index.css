@@ -21,6 +21,12 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SpaceShards';
+  src: url('/fonts/SpaceShards.ttf') format('truetype');
+  /* Add other font formats if available */
+}
+
 .perspective-[1000px] {
   perspective: 1000px;
 }

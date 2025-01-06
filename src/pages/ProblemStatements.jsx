@@ -90,12 +90,12 @@ function ProblemStatements() {
           >
             <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
             
-            <div className="relative bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-blue-light/20 h-full">
+            <div className="relative bg-black p-6 rounded-xl border border-blue-light/20 h-full">
               <div className="inline-block px-3 py-1 rounded-full bg-blue-light/10 border border-blue-light/30 text-blue-light font-['SpaceShards'] text-sm mb-4">
                 {problem.track}
               </div>
               
-              <h3 className="text-2xl font-['PrinceofpersiaRegular'] text-blue-pale mb-4">
+              <h3 className="text-2xl font-['PrinceofpersiaRegular'] text-white mb-4">
                 {problem.title}
               </h3>
               
