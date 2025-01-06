@@ -49,6 +49,7 @@ export default {
       fontFamily: {
         'space': ['Space Grotesk', 'sans-serif'],
         'outfit': ['Outfit', 'sans-serif'],
+        'space-shards': ['SpaceShards', 'sans-serif'],
       },
     },
   },
