@@ -15,13 +15,13 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const links = [
-    { path: '/', label: 'Home' },
-    { path: '/problems', label: 'Problem Statements' },
-    { path: '/guidelines', label: 'Guidelines' },
-    { path: '/committees', label: 'Committees' },
-    { path: '/submit', label: 'Submit Idea' },
-    { path: '/archives', label: 'Archives' },
+  const navigation = [
+    { name: 'Home', href: '/' },
+    { name: 'Problem Statements', href: '/problems' },
+    { name: 'Guidelines', href: '/guidelines' },
+    { name: 'About', href: '/about' },
+    { name: 'FAQs', href: '/faqs' },
+    { name: 'Committees', href: '/committees' }
   ];
 
   return (
@@ -46,18 +46,18 @@ function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-10">
-            {links.map((link) => (
+            {navigation.map((link) => (
               <Link
-                key={link.path}
-                to={link.path}
+                key={link.href}
+                to={link.href}
                 className="relative group px-3 py-2"
               >
                 <span className={`text-[15px] font-medium tracking-wide transition-colors duration-300 uppercase ${
-                  location.pathname === link.path
+                  location.pathname === link.href
                     ? 'text-blue-light'
                     : 'text-gray-300 group-hover:text-blue-pale'
                 }`}>
-                  {link.label}
+                  {link.name}
                 </span>
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-light to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left" />
               </Link>
@@ -85,18 +85,18 @@ function Navbar() {
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="md:hidden py-4 bg-blue-darker/90 backdrop-blur-lg"
           >
-            {links.map((link) => (
+            {navigation.map((link) => (
               <Link
-                key={link.path}
-                to={link.path}
+                key={link.href}
+                to={link.href}
                 className={`block px-4 py-3 text-[15px] font-medium tracking-wide transition-all duration-300 uppercase ${
-                  location.pathname === link.path
+                  location.pathname === link.href
                     ? 'text-blue-light bg-blue-dark/50'
                     : 'text-gray-300 hover:text-blue-pale hover:bg-blue-dark/30 hover:pl-6'
                 }`}
                 onClick={() => setIsOpen(false)}
               >
-                {link.label}
+                {link.name}
               </Link>
             ))}
           </motion.div>
