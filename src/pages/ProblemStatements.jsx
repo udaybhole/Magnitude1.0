@@ -95,7 +95,7 @@ function ProblemStatements() {
                 {problem.track}
               </div>
               
-              <h3 className="text-2xl font-['PrinceofpersiaRegular'] text-blue-pale mb-4">
+              <h3 className="text-2xl font-['VerminVibesV'] text-blue-pale mb-4 tracking-wider">
                 {problem.title}
               </h3>
               
@@ -104,7 +104,7 @@ function ProblemStatements() {
               </p>
               
               <div>
-                <h4 className="text-blue-light font-['PrinceofpersiaRegular'] mb-3">
+                <h4 className="text-blue-light font-['VerminVibesV'] mb-3 tracking-wide">
                   Key Objectives:
                 </h4>
                 <ul className="space-y-2">

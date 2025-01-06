@@ -15,9 +15,9 @@ function Guidelines() {
       points: [
         "Team leader must enter all team details. Once entered, details cannot be altered.",
         "Team names must be unique and should not contain institute names.",
-        "Registration Date extended: 16 December 2024",
-        "Registration Fee: ₹ 500/-",
-        "International teams must email architashiledar@gmail.com before registration.",
+        "Registration Date extended: 26 january 2024",
+        "Registration Fee: ₹ 200/-",
+        "International teams must email jagdishraut2004@gmail.com before registration.",
         "Multiple idea submissions allowed with separate registrations and fees.",
         "Registered teams can participate in Impetus and Concepts 2025 subevents free of charge (separate registration required)."
       ]
@@ -36,9 +36,9 @@ function Guidelines() {
     {
       title: "Idea Nomination Process",
       points: [
-        "Only 100 teams will be shortlisted for further rounds.",
+        "Only 30 teams will be shortlisted for further rounds.",
         "Nominated team leaders will receive email notifications.",
-        "Submission deadline: Last week of December (tentative).",
+        "Submission deadline: Last week of January (tentative).",
         "No requests entertained after deadline."
       ]
     },
@@ -52,9 +52,9 @@ function Guidelines() {
     {
       title: "Mode of Hackathon",
       points: [
-        "Pre-final rounds will be held online (Last Week of December/First Week of January 2025)",
-        "Final round will be offline (Last week of January/First week of February 2025)",
-        "Selected teams will be notified via portal, PICT website, and email"
+        "Pre-final rounds will be held online (Last Week of January/First Week of February 2025)",
+        "Final round will be offline (Last week of February/First week of March 2025)",
+        "Selected teams will be notified via portal, DYPCOE website, and email"
       ]
     }
   ];
