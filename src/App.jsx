@@ -5,7 +5,7 @@ import ProblemStatements from "./pages/ProblemStatements";
 import Guidelines from "./pages/Guidelines";
 import Committees from "./pages/Committees";
 import IdeaSubmission from "./pages/IdeaSubmission";
-import Archives from "./pages/Archives";
+import About from "./pages/About";
 import VantaBackground from "./components/VantaBackground";
 import FAQ from "./pages/FAQ";
 import Footer from './components/Footer';
@@ -24,7 +24,7 @@ function App() {
               <Route path="/guidelines" element={<Guidelines />} />
               <Route path="/committees" element={<Committees />} />
               <Route path="/submit" element={<IdeaSubmission />} />
-              <Route path="/archives" element={<Archives />} />
+              <Route path="/about" element={<About />} />
               <Route path="/faq" element={<FAQ />} />
             </Routes>
           </main>
