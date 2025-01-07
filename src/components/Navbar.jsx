@@ -40,7 +40,7 @@ function Navbar() {
           >
             <div className="h-20 flex items-center">
               <img 
-                src="/magnitude_logo.png" 
+                src="/magnitude_logo1.png" 
                 alt="Magnitude Logo" 
                 className="h-full w-auto object-contain cursor-pointer"
               />
