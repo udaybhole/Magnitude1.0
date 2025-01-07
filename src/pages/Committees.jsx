@@ -33,7 +33,7 @@ function Committees() {
       {
         name: "Jagdish Raut",
         role: "Web Developer",
-        position: "Commander CPMC",
+        position: "Commander @CPMC",
         image: "/jagdish.jpg",
         github: "https://github.com/Jagdish2004",
         linkedin: "https://www.linkedin.com/in/jagdish-raut-bba036259/",
@@ -42,7 +42,7 @@ function Committees() {
       {
         name: "Dinesh Aher",
         role: "Web Developer",
-        position: "Vice Admiral CPMC",
+        position: "Vice Admiral @CPMC",
         image: "/dinesh.jpg",
         github: "https://github.com/Dinesh-dypcoe",
         linkedin: "https://www.linkedin.com/in/dineshaher/",
@@ -51,7 +51,7 @@ function Committees() {
       {
         name: "Mokshad Patil",
         role: "Web Developer",
-        position: "Commander CPMC",
+        position: "Commander @CPMC",
         image: "/Mokshad-Patil.png",
         github: "https://github.com/Moksh-git",
         linkedin: "https://linkedin.com/in/mokshadpatil",
@@ -60,10 +60,10 @@ function Committees() {
       {
         name: "Kishor Mote",
         role: "Web Developer",
-        position: "Commander CPMC",
-        image: "/committee/emma-wilson.jpg",
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
+        position: "Commander @CPMC",
+        image: "/Kishor.jpg",
+        github: "https://github.com/kishormote",
+        linkedin: "https://www.linkedin.com/in/kishor-mote-a63988257/",
         instagram: "https://instagram.com"
       }
     ]
