@@ -31,12 +31,12 @@ function Committees() {
     ],
     web: [
       {
-        name: "Mike Johnson",
+        name: "Jagdish Raut",
         role: "Web Developer",
-        image: "/committee/mike-johnson.jpg",
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        instagram: "https://instagram.com"
+        image: "/jagdish.jpg",
+        github: "https://github.com/Jagdish2004",
+        linkedin: "https://www.linkedin.com/in/jagdish-raut-bba036259/",
+        instagram: "https://instagram.com/jagdish.2004"
       },
       {
         name: "Dinesh Aher",
@@ -47,12 +47,12 @@ function Committees() {
         instagram: "https://instagram.com/dinesh_aher2505"
       },
       {
-        name: "Jagdish Raut",
+        name: "Mokshad Patil",
         role: "Web Developer",
-        image: "/jagdish.jpg",
-        github: "https://github.com/Jagdish2004",
-        linkedin: "https://www.linkedin.com/in/jagdish-raut-bba036259/",
-        instagram: "https://instagram.com/jagdish.2004"
+        image: "/Mokshad-Patil.png",
+        github: "https://github.com/Moksh-git",
+        linkedin: "https://linkedin.com/in/mokshadpatil",
+        instagram: "https://www.instagram.com/mokshad_patil/"
       },
       {
         name: "Emma Wilson",
