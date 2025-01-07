@@ -33,6 +33,7 @@ function Committees() {
       {
         name: "Jagdish Raut",
         role: "Web Developer",
+        position: "Commander CPMC",
         image: "/jagdish.jpg",
         github: "https://github.com/Jagdish2004",
         linkedin: "https://www.linkedin.com/in/jagdish-raut-bba036259/",
@@ -41,6 +42,7 @@ function Committees() {
       {
         name: "Dinesh Aher",
         role: "Web Developer",
+        position: "Vice Admiral CPMC",
         image: "/dinesh.jpg",
         github: "https://github.com/Dinesh-dypcoe",
         linkedin: "https://www.linkedin.com/in/dineshaher/",
@@ -49,14 +51,16 @@ function Committees() {
       {
         name: "Mokshad Patil",
         role: "Web Developer",
+        position: "Commander CPMC",
         image: "/Mokshad-Patil.png",
         github: "https://github.com/Moksh-git",
         linkedin: "https://linkedin.com/in/mokshadpatil",
         instagram: "https://www.instagram.com/mokshad_patil/"
       },
       {
-        name: "Emma Wilson",
+        name: "Kishor Mote",
         role: "Web Developer",
+        position: "Commander CPMC",
         image: "/committee/emma-wilson.jpg",
         github: "https://github.com",
         linkedin: "https://linkedin.com",
@@ -160,28 +164,36 @@ function Committees() {
           <div className="absolute inset-0 bg-gradient-to-b from-blue-deep/50 via-transparent to-transparent opacity-30 group-hover:opacity-70 transition-all duration-300" />
 
           {/* Content with enhanced animations */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-center transform transition-all duration-300 group-hover:translate-y-[-8px]">
-            {/* Name without hover effect */}
+          <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-center transform transition-all duration-300 group-hover:translate-y-[-8px]">
+            {/* Name */}
             <h3 className={`${
               isLarge 
-                ? 'text-xl sm:text-2xl mb-1' 
-                : 'text-lg sm:text-xl mb-1'
-            } font-medium text-white relative
-              drop-shadow-[0_2px_4px_rgba(24,144,255,0.3)]`}>
+                ? 'text-xl sm:text-2xl' 
+                : 'text-lg sm:text-xl'
+            } font-medium text-white relative mb-0.5
+              drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]`}>
               {member.name}
             </h3>
 
-            {/* Role below name */}
-            <p className="text-xs sm:text-sm text-blue-pale/90 mb-2 sm:mb-3 font-light tracking-wide
-              drop-shadow-[0_2px_4px_rgba(24,144,255,0.2)]">
+            {/* Role */}
+            <p className="text-sm text-blue-pale/90 mb-0.5 font-medium tracking-wide
+              drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
               {member.role}
             </p>
 
-            {/* Additional info with fade-in effect */}
+            {/* Position */}
+            {member.position && (
+              <p className="text-sm text-blue-pale font-medium tracking-wide
+                drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+                {member.position}
+              </p>
+            )}
+
+            {/* Year - if needed */}
             {member.year && (
               <motion.p 
-                className="text-blue-pale/60 text-sm mt-1 opacity-70 group-hover:opacity-100 transition-all duration-300
-                  drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
+                className="text-blue-pale/90 text-sm font-medium opacity-70 group-hover:opacity-100 transition-all duration-300
+                  drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
               >
                 {member.year}
               </motion.p>
