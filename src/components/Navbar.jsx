@@ -34,11 +34,17 @@ function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="relative group">
-            <span className="text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale bg-clip-text text-transparent">
-              Magnitude
-            </span>
-            <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale group-hover:w-full transition-all duration-300 ease-out" />
+          <Link 
+            to="/" 
+            className="relative group flex items-center gap-3 transition-transform duration-300 hover:scale-105"
+          >
+            <div className="h-20 flex items-center">
+              <img 
+                src="/magnitude_logo.png" 
+                alt="Magnitude Logo" 
+                className="h-full w-auto object-contain cursor-pointer"
+              />
+            </div>
           </Link>
 
           {/* Desktop Menu */}
