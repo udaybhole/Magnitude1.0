@@ -4,10 +4,9 @@ import Home from "./pages/Home";
 import ProblemStatements from "./pages/ProblemStatements";
 import Guidelines from "./pages/Guidelines";
 import Committees from "./pages/Committees";
-import IdeaSubmission from "./pages/IdeaSubmission";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
-
+import IdeaSubmission from "./pages/IdeaSubmission";
 import useScrollToTop from './hooks/useScrollToTop';
 
 
@@ -28,7 +27,7 @@ function AppContent() {
             <Route path="/problems" element={<ProblemStatements />} />
             <Route path="/guidelines" element={<Guidelines />} />
             <Route path="/committees" element={<Committees />} />
-            <Route path="/submit" element={<IdeaSubmission />} />
+            <Route path="IdeaSubmission" element={<IdeaSubmission />} />
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<FAQ />} />
           </Routes>

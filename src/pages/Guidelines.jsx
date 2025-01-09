@@ -5,7 +5,7 @@ function Guidelines() {
     {
       title: "Team Formation",
       points: [
-        "Each team would mandatorily comprise of minimum 4 and maximum of 5 members including the team leader.",
+        "Each team would mandatorily comprise of minimum 2 and maximum of 4 members including the team leader.",
         "Students can be members of one team only.",
         "Intercollege teams are also allowed."
       ]
@@ -15,11 +15,10 @@ function Guidelines() {
       points: [
         "Team leader must enter all team details. Once entered, details cannot be altered.",
         "Team names must be unique and should not contain institute names.",
-        "Registration Date extended: 26 january 2024",
-        "Registration Fee: ₹ 200/-",
-        "International teams must email jagdishraut2004@gmail.com before registration.",
+        
+        "Registration Fee: ₹ 400/-",
+        "International teams must email udaybhole3104@gmail.com before registration.",
         "Multiple idea submissions allowed with separate registrations and fees.",
-        "Registered teams can participate in Impetus and Concepts 2025 subevents free of charge (separate registration required)."
       ]
     },
     {
@@ -30,7 +29,6 @@ function Guidelines() {
         "Feasibility & Complexity",
         "Approach towards implementing the System and Future Use cases",
         "Clarity & details in the presentation as a team and Q & A",
-        "Time constraint: 10 min presentation + 5 min QnA (Total 15 min per team)"
       ]
     },
     {
@@ -38,7 +36,6 @@ function Guidelines() {
       points: [
         "Only 30 teams will be shortlisted for further rounds.",
         "Nominated team leaders will receive email notifications.",
-        "Submission deadline: Last week of January (tentative).",
         "No requests entertained after deadline."
       ]
     },
@@ -81,17 +78,17 @@ function Guidelines() {
   };
 
   return (
-    <div className="min-h-screen py-16 px-4">
+    <div className="min-h-screen py-16 px-4 bg-black">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-12"
       >
-        <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-blue-light tracking-wider mb-2 sm:mb-4">
+        <h1 className="pt-8 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-purple-700 tracking-wider mb-2 sm:mb-4">
           GUIDELINES
         </h1>
-        <p className="text-base xs:text-lg sm:text-xl md:text-2xl font-['SpaceShards'] text-blue-pale">
-          Essential information for participants
+        <p className="text-base xs:text-lg sm:text-xl md:text-2xl font-['Arial'] text-white font-extrabold">
+          Essential Information For Participants!
         </p>
       </motion.div>
 
@@ -99,7 +96,7 @@ function Guidelines() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-4xl mx-auto space-y-8"
+        className="max-w-7xl mx-auto space-y-8 px-6"
       >
         {sections.map((section, index) => (
           <motion.div
@@ -107,17 +104,16 @@ function Guidelines() {
             variants={itemVariants}
             className="relative group"
           >
-            {/* Gradient border effect */}
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-purple-300 to-purple-50 rounded-xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
             
-            <div className="relative bg-black p-6 rounded-xl border border-blue-light/20">
-              <h2 className="text-2xl font-['PrinceofpersiaRegular'] text-white mb-4">
+            <div className="relative bg-black p-8 rounded-3xl border border-blue-light/20">
+              <h2 className="text-2xl font-['SpaceMission'] text-purple-700 mb-4 font-extrabold">
                 {section.title}
               </h2>
-              <ul className="space-y-3">
+              <ul>
                 {section.points.map((point, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-gray-300 font-['SpaceShards']">
-                    <span className="text-blue-light mt-1">•</span>
+                  <li key={idx} className="flex items-start gap-3 text-gray-300 font-['Arial'] font-semibold">
+                    <span className="text-purple-300 mt-1">•</span>
                     <span>{point}</span>
                   </li>
                 ))}
@@ -130,4 +126,4 @@ function Guidelines() {
   );
 }
 
-export default Guidelines; 
+export default Guidelines;
