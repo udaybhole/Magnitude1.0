@@ -58,13 +58,13 @@ function Navbar() {
                 <span
                   className={`text-[15px] font-medium tracking-wide transition-colors duration-300 uppercase ${
                     location.pathname === link.href
-                      ? "text-blue-light"
-                      : "text-gray-300 group-hover:text-blue-pale"
+                      ? "text-purple-400"
+                      : "text-gray-300 group-hover:text-purple-400"
                   }`}
                 >
                   {link.name}
                 </span>
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-light to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left" />
+                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-purple-400 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left" />
               </Link>
             ))}
           </div>

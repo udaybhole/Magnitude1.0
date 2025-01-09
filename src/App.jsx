@@ -7,7 +7,7 @@ import Committees from "./pages/Committees";
 import IdeaSubmission from "./pages/IdeaSubmission";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
-import Footer from './components/Footer';
+
 import useScrollToTop from './hooks/useScrollToTop';
 
 
@@ -33,7 +33,6 @@ function AppContent() {
             <Route path="/faq" element={<FAQ />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </div>
   );

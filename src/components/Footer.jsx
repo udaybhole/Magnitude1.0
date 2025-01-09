@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
   const contacts = [
     {
-      name: " Uday Bhole",
+      name: " Uday  Bhole",
       role: "Core Committee",
       email: "udaybhole3104@gmail.com",
       phone: "+91 9302725203"
@@ -19,7 +19,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="relative bg-black/60 backdrop-blur-sm border-t border-blue-light/20">
+    <footer className="relative bg-black/60 backdrop-blur-sm border-t border-purple-400/30">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
 
@@ -30,27 +30,27 @@ function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-['SpaceMission'] text-blue-light mb-4">
+            <h3 className="text-lg font-['SpaceMission'] text-purple-500 font-extrabold mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/problems" className="text-gray-400 hover:text-blue-light transition-colors text-sm font-['Arial']">
+                <Link to="/problems" className="text-gray-400 hover:text-purple-400 transition-colors text-sm font-['Arial']">
                   Problem Statements
                 </Link>
               </li>
               <li>
-                <Link to="/guidelines" className="text-gray-400 hover:text-blue-light transition-colors text-sm font-['Arial']">
+                <Link to="/guidelines" className="text-gray-400 hover:text-purple-400 transition-colors text-sm font-['Arial']">
                   Guidelines
                 </Link>
               </li>
               <li>
-                <Link to="/submit" className="text-gray-400 hover:text-blue-light transition-colors text-sm font-['Arial']">
+                <Link to="/submit" className="text-gray-400 hover:text-purple-400 transition-colors text-sm font-['Arial']">
                   Submit Idea
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-gray-400 hover:text-blue-light transition-colors text-sm font-['Arial']">
+                <Link to="/faq" className="text-gray-400 hover:text-purple-400 transition-colors text-sm font-['Arial']">
                   FAQ
                 </Link>
               </li>
@@ -58,27 +58,27 @@ function Footer() {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-4 lg:col-span-2">
-            <h3 className="text-lg font-['SpaceMission'] text-blue-light mb-4">
+          <div className="space-y-4 lg:col-span-3">
+            <h3 className="text-lg font-['SpaceMission'] text-purple-500 font-extrabold mb-4">
               Contact Us
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-['Arial'] font-bold">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-['Arial'] font-extrabold">
               {contacts.map((contact, index) => (
-                <div key={index} className="space-y-2 bg-black/40 p-4 rounded-lg border border-blue-light/10">
-                  <h4 className="text-blue-pale font-['SpaceShards']">
+                <div key={index} className="space-y-2 bg-black/40 p-4 rounded-lg border-2 border-purple-400/30 hover:border-purple-400">
+                  <h4 className="text-purple-300 font-['SpaceMission'] text-xl">
                     {contact.name}
                   </h4>
-                  <p className="text-xs text-gray-400">{contact.role}</p>
+                  <p className="text-s text-gray-400 font-extrabold">{contact.role}</p>
                   <div className="space-y-1 text-sm">
                     <a
                       href={`mailto:${contact.email}`}
-                      className="block text-blue-light hover:text-blue-bright transition-colors"
+                      className="block text-gray-400 hover:text-purple-400 transition-colors"
                     >
                       {contact.email}
                     </a>
                     <a
                       href={`tel:${contact.phone}`}
-                      className="block text-blue-light hover:text-blue-bright transition-colors"
+                      className="block text-gray-400 hover:text-purple-400 transition-colors"
                     >
                       {contact.phone}
                     </a>
@@ -95,7 +95,7 @@ function Footer() {
             href="https://www.instagram.com/dypcoe.official/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-gray-400 hover:text-blue-light transition-colors"
+            className="text-gray-400 hover:text-purple-400 transition-colors"
           >
             <span className="sr-only">Instagram</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -106,7 +106,7 @@ function Footer() {
             href="https://www.linkedin.com/school/dr-d-y-patil-college-of-engineering-akurdi-pune/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-gray-400 hover:text-blue-light transition-colors"
+            className="text-gray-400 hover:text-purple-400 transition-colors"
           >
             <span className="sr-only">LinkedIn</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -117,7 +117,7 @@ function Footer() {
             href="https://www.dypcoeakurdi.ac.in/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-gray-400 hover:text-blue-light transition-colors"
+            className="text-gray-400 hover:text-purple-400 transition-colors"
           >
             <span className="sr-only">Website</span>
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -127,7 +127,7 @@ function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="pt-8 mt-8 border-t border-blue-light/10 text-center">
+        <div className="pt-8 mt-8 border-t border-purple-400/30 text-center">
           <p className="text-sm text-gray-400">
             © 2025 Magnitude | DYPCOE. All rights reserved.
           </p>
