@@ -29,7 +29,7 @@ function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-500 font-space ${
-        isScrolled ? "bg-blue-darker/80 backdrop-blur-lg" : "bg-transparent"
+        isScrolled ? "bg-black/5 backdrop-blur-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

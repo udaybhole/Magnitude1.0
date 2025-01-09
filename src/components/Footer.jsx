@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 function Footer() {
   const contacts = [
     {
-      name: "Prof. Archita Shiledar",
-      role: "Faculty Coordinator",
-      email: "architashiledar@gmail.com",
-      phone: "+91 9876543210"
+      name: " Uday Bhole",
+      role: "Core Committee",
+      email: "udaybhole3104@gmail.com",
+      phone: "+91 9302725203"
     },
     {
-      name: "Jagdish Raut",
-      role: "Student Coordinator",
-      email: "jagdishraut2004@gmail.com",
-      phone: "+91 8767939605"
-    },
+      name: "Mayank Dhote",
+      role: "Core Committee",
+      email: "mayankdhote4316@gmail.com",
+      phone: "+91 6266764316"
+    }
    
   ];
 
@@ -35,22 +35,22 @@ function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/problems" className="text-gray-400 hover:text-blue-light transition-colors text-sm">
+                <Link to="/problems" className="text-gray-400 hover:text-blue-light transition-colors text-sm font-['Arial']">
                   Problem Statements
                 </Link>
               </li>
               <li>
-                <Link to="/guidelines" className="text-gray-400 hover:text-blue-light transition-colors text-sm">
+                <Link to="/guidelines" className="text-gray-400 hover:text-blue-light transition-colors text-sm font-['Arial']">
                   Guidelines
                 </Link>
               </li>
               <li>
-                <Link to="/submit" className="text-gray-400 hover:text-blue-light transition-colors text-sm">
+                <Link to="/submit" className="text-gray-400 hover:text-blue-light transition-colors text-sm font-['Arial']">
                   Submit Idea
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-gray-400 hover:text-blue-light transition-colors text-sm">
+                <Link to="/faq" className="text-gray-400 hover:text-blue-light transition-colors text-sm font-['Arial']">
                   FAQ
                 </Link>
               </li>
@@ -62,7 +62,7 @@ function Footer() {
             <h3 className="text-lg font-['SpaceMission'] text-blue-light mb-4">
               Contact Us
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-['Arial'] font-bold">
               {contacts.map((contact, index) => (
                 <div key={index} className="space-y-2 bg-black/40 p-4 rounded-lg border border-blue-light/10">
                   <h4 className="text-blue-pale font-['SpaceShards']">
