@@ -111,7 +111,7 @@ function Home() {
                     <motion.span
                       key={index}
                       variants={letterVariants}
-                      className="bg-gradient-to-r  text-purple-600 bg-clip-text text-transparent inline-block transform-gpu font-extrabold"
+                      className="bg-gradient-to-r  text-purple-800 bg-clip-text text-transparent inline-block transform-gpu font-extrabold"
                       style={{
                         display: "inline-block",
                         transformStyle: "preserve-3d",
