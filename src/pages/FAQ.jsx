@@ -57,32 +57,32 @@ function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   return (
-    <div className="pt-32 pb-16 px-4">
+    <div className="pt-32 pb-16 px-4 bg-black">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="max-w-3xl mx-auto"
       >
-        <h1 className="text-4xl md:text-5xl font-space-shards text-center mb-12 bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent">
           Frequently Asked Questions
         </h1>
 
-        <div className="space-y-4">
+        <div className="space-y-4 ">
           {faqData.map((faq, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="backdrop-blur-md bg-black/30 border border-blue-500/30 rounded-lg overflow-hidden hover:border-blue-500/50 transition-colors duration-300"
+              className="backdrop-blur-md bg-black/30 border border-purple-500/30 rounded-lg overflow-hidden hover:purple-blue-500/50 transition-colors duration-300"
             >
               <button
                 onClick={() =>
                   setExpandedIndex(expandedIndex === index ? null : index)
                 }
-                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-blue-500/10 transition-colors duration-300"
+                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-purple-500/10 transition-colors duration-300"
               >
-                <span className="text-lg font-space-shards text-blue-light">
+                <span className="text-lg font-['Arial'] text-purple-500 font-extrabold">
                   {faq.question}
                 </span>
                 <motion.span
@@ -90,7 +90,7 @@ function FAQ() {
                   transition={{ duration: 0.3 }}
                 >
                   <svg
-                    className="w-6 h-6 text-blue-light"
+                    className="w-6 h-6 text-purple-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -113,7 +113,7 @@ function FAQ() {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <p className="px-6 pb-4 text-gray-300 font-space-grotesk">
+                <p className="px-6 pb-4 text-gray-300 font-['Arial'] font-semibold">
                   {faq.answer}
                 </p>
               </motion.div>

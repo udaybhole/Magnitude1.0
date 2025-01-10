@@ -1,363 +1,249 @@
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
-import { FaPlus, FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { Github, Linkedin, Instagram , Mail } from 'lucide-react';
 
-function Committees() {
-  const [isOpen, setIsOpen] = useState(false);
+const Committees = () => {
+  const [activeSection, setActiveSection] = useState('faculty');
 
   const committees = {
     faculty: [
       {
-        name: "Dr. John Doe",
-        role: "Head of Department",
-        image: ".jpg",
-        github: "https://github.com",
+        name: "Dr. Manish Sharma",
+        position: "Faculty Co-ordinator",
+        image: "/SIR.jpg",
+        mail: "https://github.com",
         linkedin: "https://linkedin.com",
-        instagram: "https://instagram.com"
-      },
-      // Add more faculty members with their social links
+        instagram: ""
+      }
     ],
     organizing: [
       {
-        name: "Jane Smith",
-        role: "Student Lead",
-        year: "Final Year",
-        image: "/committee/jane-smith.jpg",
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        instagram: "https://instagram.com"
+        name: "AARYAN PALVE",
+        position: "Core Committee",
+        image: "/ARYAN.jpg",
+        mail: "aspalve2004@gmail.com",
+        linkedin: "https://www.linkedin.com/in/aaryan-palve-6124372b7/",
+        instagram: "https://www.instagram.com/aaryanpalve2004/"
       },
-      // Add more organizing committee members with their social links
+      {
+        name: "UDAY BHOLE",
+        position: "Core Committee",
+        image: "/UDAY.jpg",
+        mail: "udaybhole3014@gmail.com",
+        linkedin: "https://www.linkedin.com/in/uday-bhole/",
+        instagram: "https://www.instagram.com/_u_dayyy/"
+      },
+      {
+        name: "MAYANK DHOTE",
+        position: "Core Committee",
+        image: "/MAYANK.jpg",
+        mail: "mayankdhote4316@gmail.com",
+        linkedin: "https://www.linkedin.com/in/mayank-dhote-71b483257/",
+        instagram: "https://www.instagram.com/18_.mayank_/"
+      }
     ],
-    web: [
+    tech: [
       {
-        name: "Jagdish Raut",
-        role: "Web Developer",
-        position: "Commander @CPMC",
-        image: "/jagdish.jpg",
-        github: "https://github.com/Jagdish2004",
-        linkedin: "https://www.linkedin.com/in/jagdish-raut-bba036259/",
-        instagram: "https://instagram.com/jagdish.2004"
+        name: "YASH MHASKAR",
+        position: "Tech Committee",
+        image: "/YASH.jpg",
+        mail: "myash100@gmail.com",
+        linkedin: "https://www.linkedin.com/in/yash-mhaskar21/",
+        instagram: "https://www.instagram.com/myash_21/"
+      }
+    ],
+    management: [
+      {
+        name: "PARTH MAGAR",
+        position: "Mangement Committee",
+        image: "/PARTH.jpg",
+        mail: "parthmagar8@gmail.com",
+        linkedin: "https://www.linkedin.com/in/parth-magar-339044288/",
+        instagram: "https://www.instagram.com/sponge.exee/"
       },
       {
-        name: "Dinesh Aher",
-        role: "Web Developer",
+        name: "PRAJWAL SANAP",
+        position: "Mangement Committee",
+        image: "/PRAJWAL.jpg",
+        mail: "prajwalsanap123@gmail.com",
+        linkedin: "https://in.linkedin.com/in/prajwalsanap",
+        instagram: "https://www.instagram.com/sanap_prajwal/"
+      }
+    ],
+    maintainers: [
+      {
+        name: "UDAY BHOLE",
+        position: "Vice Admiral @CPMC",
+        image: "/UDAY.jpg",
+        mail: "udaybhole3104@gmail.com",
+        linkedin: "https://www.linkedin.com/in/uday-bhole/",
+        instagram: "https://www.instagram.com/_u_dayyy/"
+      },
+      {
+        name: "DINESH AHER",
         position: "Vice Admiral @CPMC",
         image: "/dinesh.jpg",
-        github: "https://github.com/Dinesh-dypcoe",
+        mail: "https://Mail.com",
         linkedin: "https://www.linkedin.com/in/dineshaher/",
         instagram: "https://instagram.com/dinesh_aher2505"
       },
       {
-        name: "Mokshad Patil",
-        role: "Web Developer",
+        name: "PARTH MAGAR",
+        position: "Commander @CPMC",
+        image: "/PARTH.jpg",
+        mail: "parthmagar8@gmail.com",
+        linkedin: "https://www.linkedin.com/in/parth-magar-339044288/",
+        instagram: "https://www.instagram.com/sponge.exee/"
+      }
+      ,
+      {
+        name: "KISHOR MOTE",
+        position: "Commander @CPMC",
+        image: "/Kishor.jpg",
+        mail: "kishormote2003@gmail.com",
+        linkedin: "https://www.linkedin.com/in/kishor-mote-a63988257/",
+        instagram: "https://www.instagram.com/kishor.mote.1428/"
+      },
+      {
+        name: "MOKSHAD PATIL",
         position: "Commander @CPMC",
         image: "/Mokshad-Patil.png",
-        github: "https://github.com/Moksh-git",
-        linkedin: "https://linkedin.com/in/mokshadpatil",
+        mail: "patilmokshadg@gmail.com",
+        linkedin: "https://www.linkedin.com/in/mokshadpatil/",
         instagram: "https://www.instagram.com/mokshad_patil/"
       },
       {
-        name: "Kishor Mote",
-        role: "Web Developer",
+        name: "JAGDISH RAUT",
         position: "Commander @CPMC",
-        image: "/Kishor.jpg",
-        github: "https://github.com/kishormote",
-        linkedin: "https://www.linkedin.com/in/kishor-mote-a63988257/",
-        instagram: "https://instagram.com"
+        image: "/jagdish.jpg",
+        mail: "jagdishraut2004@gamil.com",
+        linkedin: "https://www.linkedin.com/in/jagdish-raut-bba036259/",
+        instagram: "https://www.instagram.com/jagdish.2004/"
       }
     ]
   };
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 2,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
+  const sections = {
+    faculty: "Faculty",
+    organizing: "Organizing Committee",
+    tech: "Tech Committee",
+    management: "Management Committee",
+    maintainers: "Website Maintainers"
   };
 
-  const cardVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut"
-      }
-    }
-  };
-
-  const CommitteeCard = ({ member, isLarge }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const socialLinks = [
-      {
-        icon: <FaGithub className="w-4 h-4" />,
-        href: member.github || "#",
-        color: "hover:bg-gray-800"
-      },
-      {
-        icon: <FaLinkedin className="w-4 h-4" />,
-        href: member.linkedin || "#",
-        color: "hover:bg-blue-600"
-      },
-      {
-        icon: <FaInstagram className="w-4 h-4" />,
-        href: member.instagram || "#",
-        color: "hover:bg-pink-600"
-      }
-    ];
-
-    return (
-      <motion.div
-        variants={cardVariants}
-        whileHover={{ 
-          y: -8,
-          transition: { duration: 0.2 }
-        }}
-        className={`group relative overflow-hidden rounded-xl mx-auto ${
-          isLarge 
-            ? 'h-[350px] sm:h-[400px] w-[240px] sm:w-[280px] md:w-[300px]' 
-            : 'h-[300px] sm:h-[350px] w-[220px] sm:w-[240px] md:w-[260px]'
-        } glass backdrop-blur-lg transition-all duration-500
-          shadow-[0_8px_20px_rgba(0,0,0,0.3)]
-          before:absolute before:inset-0 before:-z-10 before:translate-y-3 before:translate-x-3 
-          before:bg-blue-light/10 before:rounded-xl before:blur-xl
-          after:absolute after:inset-0 after:-z-20 after:translate-y-6 after:translate-x-6 
-          after:bg-blue-deep/20 after:rounded-xl after:blur-xl
-          group-hover:shadow-[0_15px_30px_rgba(24,144,255,0.4)]
-          group-hover:before:translate-y-6 group-hover:before:translate-x-6
-          group-hover:after:translate-y-8 group-hover:after:translate-x-8
-          before:transition-transform after:transition-transform
-          before:duration-500 after:duration-500
-        `}
-      >
-        {/* Gradient border container - visible by default, enhanced on hover */}
-        <div className="absolute -inset-[1px] bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl opacity-20 group-hover:opacity-100 transition-opacity duration-300 blur-[2px]" />
-        <div className="absolute -inset-[1px] bg-gradient-to-r from-blue-light via-blue-bright to-blue-pale rounded-xl opacity-10 group-hover:opacity-20 transition-opacity duration-300" />
-        
-        {/* Card content container with inner border */}
-        <div className="absolute inset-[1px] bg-blue-deep/90 rounded-xl overflow-hidden
-          shadow-[inset_0_0_15px_rgba(0,0,0,0.5)]
-        ">
-          {/* Full size image with dynamic zoom */}
-          <div className="absolute inset-0 overflow-hidden">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-full h-full object-cover scale-125 transform transition-transform duration-700
-                group-hover:scale-[1.35]"
-              style={{
-                imageRendering: 'high-quality',
-                backfaceVisibility: 'hidden',
-                WebkitBackfaceVisibility: 'hidden'
-              }}
-            />
-          </div>
-
-          {/* Multiple gradient overlays for depth - visible by default */}
-          <div className="absolute inset-0 bg-gradient-to-t from-blue-deep via-blue-deep/30 to-transparent opacity-70 group-hover:opacity-90 transition-all duration-300" />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-deep/50 via-transparent to-transparent opacity-30 group-hover:opacity-70 transition-all duration-300" />
-
-          {/* Content with enhanced animations */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-center transform transition-all duration-300 group-hover:translate-y-[-8px]">
-            {/* Name */}
-            <h3 className={`${
-              isLarge 
-                ? 'text-xl sm:text-2xl' 
-                : 'text-lg sm:text-xl'
-            } font-medium text-white relative mb-0.5
-              drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]`}>
-              {member.name}
-            </h3>
-
-            {/* Role */}
-            <p className="text-sm text-blue-pale/90 mb-0.5 font-medium tracking-wide
-              drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
-              {member.role}
-            </p>
-
-            {/* Position */}
-            {member.position && (
-              <p className="text-sm text-blue-pale font-medium tracking-wide
-                drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
-                {member.position}
-              </p>
-            )}
-
-            {/* Year - if needed */}
-            {member.year && (
-              <motion.p 
-                className="text-blue-pale/90 text-sm font-medium opacity-70 group-hover:opacity-100 transition-all duration-300
-                  drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
-              >
-                {member.year}
-              </motion.p>
-            )}
-          </div>
-
-          {/* Top decorative gradient with enhanced glow */}
-          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-blue-light/5 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-300 blur-xl" />
-        </div>
-
-        {/* Social Media Menu - Positioned in bottom right of card */}
-        <div className="absolute bottom-2 sm:bottom-4 right-2 sm:right-4 z-10">
-          <div className="relative flex flex-col items-center">
-            <AnimatePresence>
-              {isOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  className="absolute bottom-full mb-2 flex flex-col gap-2 items-center"
-                >
-                  {socialLinks.map((link, index) => (
-                    <motion.a
-                      key={index}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      transition={{ delay: index * 0.1 }}
-                      className={`p-2 rounded-full bg-blue-deep/90 backdrop-blur-sm 
-                        text-blue-pale transition-all duration-300 
-                        hover:shadow-lg hover:shadow-blue-light/20 
-                        hover:text-white ${link.color}
-                        w-8 h-8 flex items-center justify-center`}
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      {link.icon}
-                    </motion.a>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-
-            {/* Toggle Button */}
-            <motion.button
-              onClick={(e) => {
-                e.preventDefault();
-                setIsOpen(!isOpen);
-              }}
-              className={`p-2 rounded-full bg-blue-deep/90 backdrop-blur-sm 
-                text-blue-pale transition-all duration-300
-                hover:shadow-lg hover:shadow-blue-light/20 
-                hover:text-white hover:bg-blue-light/20
-                ${isOpen ? 'bg-blue-light/20' : ''}
-                w-8 h-8 flex items-center justify-center`}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              animate={{ 
-                rotate: isOpen ? 45 : 0
-              }}
-            >
-              <FaPlus className="w-4 h-4" />
-            </motion.button>
-          </div>
-        </div>
-      </motion.div>
-    );
-  };
-
-  return (
+  const CommitteeCard = ({ member }) => (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="min-h-screen py-16 px-4"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      whileHover={{ scale: 1.02 }}
+      className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl bg-gradient-to-b from-purple-900/20 to-black/40 backdrop-blur-sm"
+      style={{ width: '280px', height: '350px' }}
     >
-      <div className="max-w-[1400px] mx-auto">
-        {/* Main Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-8 sm:mb-12"
-        >
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-blue-light tracking-wider mb-2 sm:mb-4">
-            COMMITTEES
-          </h1>
-          <p className="text-base xs:text-lg sm:text-xl md:text-2xl font-['SpaceShards'] text-blue-pale">
-            Meet our team
-          </p>
-        </motion.div>
+      <img
+        src={member.image}
+        alt={member.name}
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/70 to-transparent">
+        <h3 className="text-xl font-semibold text-white">{member.name}</h3>
+        <p className="text-sm text-gray-300">{member.role}</p>
+        {member.position && (
+          <p className="text-sm text-purple-300">{member.position}</p>
+        )}
+        {(member.mail || member.linkedin || member.instagram) && (
+          <div className="flex gap-3 mt-2">
+      {member.mail && (
+  <a
+    href={`mailto:${member.mail}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white hover:text-purple-400"
+  >
+    <Mail size={20} />
+  </a>
+)}
 
-        {/* Faculty Coordinators */}
-        <section className="mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['SpaceShards'] text-center mb-4 sm:mb-6 lg:mb-8 text-blue-light">
-            Faculty Coordinators
-          </h2>
-          <div className="flex justify-center">
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-              className="grid gap-4 sm:gap-6 lg:gap-8 w-full max-w-6xl"
-              style={{
-                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
-                justifyItems: 'center'
-              }}
-            >
-              {committees.faculty.map((member, index) => (
-                <CommitteeCard key={index} member={member} isLarge={true} />
-              ))}
-            </motion.div>
+            {member.linkedin && (
+              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-400">
+                <Linkedin size={20} />
+              </a>
+            )}
+            {member.instagram && (
+              <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-400">
+                <Instagram size={20} />
+              </a>
+            )}
           </div>
-        </section>
-
-        {/* Organizing Committee */}
-        <section className="mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['SpaceShards'] text-center mb-4 sm:mb-6 lg:mb-8 text-blue-light">
-            Organizing Committee
-          </h2>
-          <div className="flex justify-center">
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-              className="grid gap-6 w-full max-w-6xl"
-              style={{
-                gridTemplateColumns: 'repeat(auto-fit, minmax(260px, max-content))',
-                justifyContent: 'center'
-              }}
-            >
-              {committees.organizing.map((member, index) => (
-                <CommitteeCard key={index} member={member} isLarge={false} />
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Web Committee */}
-        <section>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['SpaceShards'] text-center mb-4 sm:mb-6 lg:mb-8 text-blue-light">
-            Web Committee
-          </h2>
-          <div className="flex justify-center">
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-              className="grid gap-6 w-full max-w-6xl"
-              style={{
-                gridTemplateColumns: 'repeat(auto-fit, minmax(260px, max-content))',
-                justifyContent: 'center'
-              }}
-            >
-              {committees.web.map((member, index) => (
-                <CommitteeCard key={index} member={member} isLarge={false} />
-              ))}
-            </motion.div>
-          </div>
-        </section>
+        )}
       </div>
     </motion.div>
   );
-}
 
-export default Committees; 
+  const getGridClass = (section) => {
+    switch (section) {
+      case 'faculty':
+        return 'flex justify-center';
+      case 'organizing':
+        return 'grid grid-cols-1 md:grid-cols-3 gap-40';
+      case 'tech':
+        return 'flex justify-center';
+      case 'management':
+        return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
+      case 'maintainers':
+        return 'grid grid-cols-1 md:grid-cols-3 gap-40 auto-rows-max';
+      default:
+        return 'grid grid-cols-1 md:grid-cols-3 gap-8';
+    }
+  };
+
+  return (
+    <div className="min-h-screen py-16 px-4 bg-black">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-4xl pt-10 md:text-5xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-700 via-purple-400 to-purple-50 bg-clip-text text-transparent">
+          Committees
+        </h1>
+
+        <h4 className="text-1xl md:text-3xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-700 via-purple-400 to-purple-50 bg-clip-text text-transparent">
+          MEET OUR TEAM.
+        </h4>
+
+        <div className=" pt-4 flex flex-wrap justify-between items-center gap-4 mb-12 px-4">
+          {Object.entries(sections).map(([key, label]) => (
+            <button
+              key={key}
+              onClick={() => setActiveSection(key)}
+              className={`px-6 py-2 rounded-full text-sm md:text-base transition-all duration-300 ${
+                activeSection === key
+                  ? 'bg-purple-400 text-white shadow-lg shadow-purple-500/30 font-extrabold'
+                  : 'bg-black border border-purple-700 text-white hover:bg-purple-400 font-extrabold'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeSection}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className={`max-w-6xl pt-8 mx-auto ${getGridClass(activeSection)}`}
+            style={{
+              marginTop: '2rem',
+              marginBottom: '2rem'
+            }}
+          >
+            {committees[activeSection].map((member, index) => (
+              <CommitteeCard key={index} member={member} />
+            ))}
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </div>
+  );
+};
+
+export default Committees;

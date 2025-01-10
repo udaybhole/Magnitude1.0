@@ -10,9 +10,9 @@ function About() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h2 className="text-2xl pt-8 xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-purple-700 tracking-wider mb-2 sm:mb-4 font-extrabold">
-            ABOUT US
-          </h2>
+        <h1 className="pt-10 text-4xl md:text-5xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-600 to-white bg-clip-text text-transparent">
+          About Us
+        </h1>
         </motion.div>
 
         <div className="max-w-7xl mx-auto">
@@ -89,9 +89,9 @@ function About() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-2xl sm:text-4xl font-['SpaceMission'] text-purple-700 tracking-wider mb-2 sm:mb-4 font-extrabold">
-            TECHNICAL CLUBS
-          </h2>
+          <h1 className="text-4xl md:text-5xl font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent">
+          Organizing Association's
+        </h1>
         </motion.div>
 
         <div className="max-w-7xl mx-auto">

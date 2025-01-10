@@ -177,9 +177,10 @@ const ProblemStatements = () => {
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-['SpaceMission'] text-purple-700 tracking-wider mb-4 font-extrabold"
+            className="text-4xl md:text-5xl font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent font-extrabold"
           >
             PROBLEM STATEMENTS
+            
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
