@@ -385,22 +385,32 @@ function Home() {
               >
                 <div className="flex-1 md:text-right md:pr-8">
                   <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300  group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:ml-auto md:w-[380px]">
-                    <div className="flex items-center md:justify-end gap-3 mb-4">
+                    <div className="flex items-center md:justify-start justify-start  gap-3 mb-4">
                       <h3 className="text-3xl text-purple-400 tracking-wider font-bold font-['SpaceMIssion']">
                         FINAL PHASE
                       </h3>
                       <BsTrophy className="text-2xl text-white" />
                     </div>
-                    <h4 className="text-xl text-white mb-2 font-['Arial'] font-extrabold">
+                    <h4 className="text-xl text-white mb-2 font-['Arial'] font-extrabold text-start">
                       Grand Finale
                     </h4>
-                    <p className="text-gray-400 mb-3 font-['Arial']">
+                    <p className="text-gray-400 mb-3 font-['Arial'] text-start font-bold">
                       15th March 2024
                     </p>
-                    <ul className="text-sm text-gray-400 space-y-1 font-['Arial']">
-                      <li>• Final Presentations</li>
-                      <li>• Project Exhibition</li>
-                      <li>• Winners Announcement</li>
+                    <ul className="text-sm text-gray-400 space-y-1 font-bold" >
+                      <li className="flex items-center md:justify-start gap-2 font-['Arial']  ">
+                      <span className="text-purple-100">•</span>
+                        <span>Final Presentations</span>
+                      </li>
+                      <li className="flex items-center md:justify-start gap-2 font-['Arial']">
+                      <span className="text-purple-100">•</span>
+                        <span>Project Exhibition</span>
+                       
+                      </li>
+                      <li className="flex items-center md:justify-start gap-2 font-['Arial']">
+                      <span className="text-purple-100">•</span>
+                        <span>Winners Announcement</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
