@@ -27,7 +27,6 @@ function AppContent() {
             <Route path="/problems" element={<ProblemStatements />} />
             <Route path="/guidelines" element={<Guidelines />} />
             <Route path="/committees" element={<Committees />} />
-            <Route path="IdeaSubmission" element={<IdeaSubmission />} />
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<FAQ />} />
           </Routes>

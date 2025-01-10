@@ -18,12 +18,12 @@ function Navbar() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Problem Statements", href: "/problems" },
-    { name: "Guidelines", href: "/guidelines" },
-    { name: "About", href: "/about" },
-    { name: "FAQ", href: "/faq" },
     { name: "Committees", href: "/committees" },
-    { name: "IdeaSubmission", href: "/IdeaSubmission" },
-  ];
+    { name: "About", href: "/about" },
+
+    { name: "Guidelines", href: "/guidelines" },
+    { name: "FAQ", href: "/faq" },
+      ];
 
   return (
     <motion.nav

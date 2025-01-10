@@ -80,12 +80,12 @@ function Home() {
   return (
     <div className="min-h-screen bg-black">
       <div className="relative h-screen">
-      {/* <div className="absolute inset-0" style={{ pointerEvents: 'auto', touchAction: 'auto' }}>
+      <div className="absolute inset-0" style={{ pointerEvents: 'auto', touchAction: 'auto' }}>
     <Spline 
       scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
       style={{ width: '100%', height: '100%' }}
     />
-  </div> */}
+  </div>
         
   <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8" style={{ pointerEvents: 'none' }}>
     <motion.div
@@ -111,7 +111,7 @@ function Home() {
                     <motion.span
                       key={index}
                       variants={letterVariants}
-                      className="bg-gradient-to-r  text-white bg-clip-text text-transparent inline-block transform-gpu font-extrabold"
+                      className="bg-gradient-to-r  from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent inline-block transform-gpu font-extrabold"
                       style={{
                         display: "inline-block",
                         transformStyle: "preserve-3d",
