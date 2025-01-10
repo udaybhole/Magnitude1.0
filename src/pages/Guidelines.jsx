@@ -84,7 +84,7 @@ function Guidelines() {
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-12"
       >
-        <h1 className="pt-8 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-purple-700 tracking-wider mb-2 sm:mb-4">
+        <h1 className="pt-8 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['SpaceMission'] text-purple-700 tracking-wider mb-2 sm:mb-4 font-extrabold">
           GUIDELINES
         </h1>
         <p className="text-base xs:text-lg sm:text-xl md:text-2xl font-['Arial'] text-white font-extrabold">
@@ -107,7 +107,7 @@ function Guidelines() {
             <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-purple-300 to-purple-50 rounded-xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
             
             <div className="relative bg-black p-8 rounded-3xl border border-blue-light/20">
-              <h2 className="text-2xl font-['SpaceMission'] text-purple-700 mb-4 font-extrabold">
+              <h2 className="text-3xl font-['SpaceMission'] text-purple-700 mb-4 font-extrabold">
                 {section.title}
               </h2>
               <ul>
