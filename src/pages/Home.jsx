@@ -5,7 +5,7 @@ import { BsCalendar2Check, BsLightbulb, BsTrophy } from 'react-icons/bs';
 import { FaCode, FaMapMarkerAlt } from 'react-icons/fa';
 import Spline from '@splinetool/react-spline';
 import Footer from "../components/Footer";
-
+import VantaBackground from "../components/Vanat";
 function Home() {
   const magnitudeText = "MAGNITUDE";
   const [count, setCount] = useState(0);
@@ -80,16 +80,24 @@ function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen sm:bg-black">
       <div className="relative h-screen">
-      <div
-      className="absolute inset-0 pointer-events-auto touch-action-auto hidden md:block"
-    >
+
+    <div className="absolute inset-0 pointer-events-auto touch-action-auto">
+      {/* Mobile Spline Model */}
+      <div className="block md:hidden">
+        <VantaBackground></VantaBackground>
+        
+      </div>
+
+      {/* Laptop Spline Model */}
+      <div className="hidden md:block">
       <Spline
         scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
         style={{ width: '100%', height: '100%' }}
       />
-    </div> 
+      </div>
+    </div>
 
   <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8" style={{ pointerEvents: 'none' }}>
     <motion.div
@@ -140,7 +148,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-black">
+      <div className="sm:bg-black">
 
         <div className="max-w-5xl mx-auto py-20 px-4">
           

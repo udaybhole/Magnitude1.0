@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Spline from "@splinetool/react-spline";
 import { motion, useAnimationControls, AnimatePresence } from "framer-motion";
-
+import VantaBackground from '../components/Vanat';
 const ProblemStatements = () => {
 
   const [selectedProblem, setSelectedProblem] = useState(null);
@@ -168,16 +168,31 @@ const ProblemStatements = () => {
 
   return (
     <div>
-      <div className="relative pt-24 bg-black">
+      <div className="relative pt-24 sm:bg-black">
       <div className='relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px]'>
-  <Spline
+      <div className="absolute inset-0 pointer-events-auto touch-action-auto">
+      {/* Mobile Spline Model */}
+      <div className="block md:hidden">
+        <VantaBackground></VantaBackground>
+        
+      </div>
+
+      {/* Laptop Spline Model */}
+      <div className="hidden md:block">
+      <Spline
     scene="https://prod.spline.design/mTwLiP3zC9zAz7Zm/scene.splinecode"
     style={{ 
       width: '100%', 
       height: '100%',
     }}
   />
+      </div>
+    </div>
 </div>
+
+
+
+
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -205,7 +220,7 @@ const ProblemStatements = () => {
 
 
 
-      <div className="py-8 px-4 bg-black">
+      <div className="py-8 px-4 sm:bg-black">
   <div className="max-w-7xl mx-auto">
     <div className="relative overflow-x-auto shadow-md rounded-3xl">
       <table className="w-full text-left table-fixed">
