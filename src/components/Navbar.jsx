@@ -101,7 +101,7 @@ function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="md:hidden py-4 bg-blue-darker/90 backdrop-blur-lg"
+            className="md:hidden py-4  backdrop-blur-lg"
           >
             {navigation.map((link) => (
               <Link
@@ -109,8 +109,8 @@ function Navbar() {
                 to={link.href}
                 className={`block px-4 py-3 text-[15px] font-medium tracking-wide transition-all duration-300 uppercase ${
                   location.pathname === link.href
-                    ? "text-blue-light bg-blue-dark/50"
-                    : "text-gray-300 hover:text-blue-pale hover:bg-blue-dark/30 hover:pl-6"
+                    ? "bg-purple-400 bg-purple-400/30"
+                    : "text-gray-300 hover:bg-purple-200/60  hover:pl-6"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
