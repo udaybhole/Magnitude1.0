@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Instagram , Mail } from 'lucide-react';
+import VantaBackground from '../components/Vanat';
+
 
 const Committees = () => {
   const [activeSection, setActiveSection] = useState('faculty');
+
+ 
 
   const committees = {
     faculty: [
@@ -198,8 +202,11 @@ const Committees = () => {
   };
 
   return (
-    <div className="min-h-screen py-16 px-4 bg-black">
-      <div className="max-w-7xl mx-auto">
+    
+    <div className="relative min-h-screen py-16 px-4">
+      <VantaBackground /> 
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <h1 className="text-4xl pt-10 md:text-5xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-700 via-purple-400 to-purple-50 bg-clip-text text-transparent">
           Committees
         </h1>
@@ -208,7 +215,7 @@ const Committees = () => {
           MEET OUR TEAM.
         </h4>
 
-        <div className=" pt-4 flex flex-wrap justify-between items-center gap-4 mb-12 px-4">
+        <div className="pt-4 flex flex-wrap justify-between items-center gap-4 mb-12 px-4">
           {Object.entries(sections).map(([key, label]) => (
             <button
               key={key}
@@ -233,7 +240,7 @@ const Committees = () => {
             className={`max-w-6xl pt-8 mx-auto ${getGridClass(activeSection)}`}
             style={{
               marginTop: '2rem',
-              marginBottom: '2rem'
+              marginBottom: '2rem',
             }}
           >
             {committees[activeSection].map((member, index) => (

@@ -6,7 +6,6 @@ import { FaCode, FaMapMarkerAlt } from 'react-icons/fa';
 import Spline from '@splinetool/react-spline';
 import Footer from "../components/Footer";
 
-
 function Home() {
   const magnitudeText = "MAGNITUDE";
   const [count, setCount] = useState(0);
@@ -14,6 +13,8 @@ function Home() {
   const controls = useAnimationControls();
   const prizeControls = useAnimationControls();
   const [showUpdates, setShowUpdates] = useState(false);
+
+  
 
   useEffect(() => {
     controls.start({
@@ -25,6 +26,18 @@ function Home() {
     });
   }, []);
 
+  const isMobile = window.innerWidth <= 767; // Check if the screen width is 767px or less
+
+  const style = {
+    position: "absolute",
+    inset: "0",
+    pointerEvents: "auto",
+    touchAction: "auto",
+    width: "100%",
+    height: isMobile ? "100vh" : "100%", // Full height on mobile, 100% otherwise
+    objectFit: "contain", // Ensures the model fits without distortion
+
+  };
   const containerVariants = {
     hidden: { opacity: 1 },
     visible: {
@@ -80,12 +93,12 @@ function Home() {
   return (
     <div className="min-h-screen bg-black">
       <div className="relative h-screen">
-      <div className="absolute inset-0" style={{ pointerEvents: 'auto', touchAction: 'auto' }}>
-    <Spline 
-      scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
-      style={{ width: '100%', height: '100%' ,opacity: 0.9 }}
-    />
-  </div> 
+      <div style={style}>
+      <Spline
+        scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
+        style={{ width: "100%", height: "100%" }}
+      />
+    </div>
 
   <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8" style={{ pointerEvents: 'none' }}>
     <motion.div
@@ -139,6 +152,7 @@ function Home() {
       <div className="bg-black">
 
         <div className="max-w-5xl mx-auto py-20 px-4">
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

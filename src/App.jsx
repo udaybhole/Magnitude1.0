@@ -15,6 +15,7 @@ import useScrollToTop from './hooks/useScrollToTop';
 function AppContent() {
   useScrollToTop();
 
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
     <div className="relative z-10">

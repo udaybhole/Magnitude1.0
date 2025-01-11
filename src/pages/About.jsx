@@ -114,7 +114,7 @@ function About() {
           link: "https://www.cpmcdypcoe.in/",
           title: "Competitive Programming And MentorShip Club.",
           description:
-            'The "Competitive Programming and Mentorship Club" (CPMC) is a student-driven initiative aimed at fostering critical thinking, problem-solving skills, and technical excellence through competitive programming. CPMC serves as a bridge between junior and senior students, enabling mentorship and collaboration to help students excel in technical fields.',
+            'The "Competitive Programming and Mentorship Club" (CPMC) is a student-driven initiative aimed at fostering critical thinking, problem-solving skills, and technical excellence through competitive programming. CPMC serves as a bridge between junior and senior students, enabling mentorship and collaboration to help students excel in technical fields, improve employability, and prepare for real-world challenges.',
         },
         {
           name: "ITESA",

@@ -168,15 +168,13 @@ const ProblemStatements = () => {
 
   return (
     <div>
-      <div className="relative pt-24">
-      <div className='relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]'>
+      <div className="relative pt-24 bg-black">
+      <div className='relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px]'>
   <Spline
     scene="https://prod.spline.design/mTwLiP3zC9zAz7Zm/scene.splinecode"
     style={{ 
       width: '100%', 
       height: '100%',
-      maxWidth: '100vw',
-      objectFit: 'contain'
     }}
   />
 </div>
@@ -198,7 +196,7 @@ const ProblemStatements = () => {
           </motion.p>
         </div>
 
-        <div className="pt-8 mt-8 border-t border-purple-400/30 text-center font-['Arial'] font-extrabold text-xl ">
+        <div className="pt-8 mt-8 border-t border-purple-400 text-center font-['Arial']  ">
   
 </div>
       </div>
@@ -207,7 +205,7 @@ const ProblemStatements = () => {
 
 
 
-      <div className="py-8 px-4 bg-dark-blue">
+      <div className="py-8 px-4 bg-black">
   <div className="max-w-7xl mx-auto">
     <div className="relative overflow-x-auto shadow-md rounded-3xl">
       <table className="w-full text-left table-fixed">
@@ -273,7 +271,7 @@ const ProblemStatements = () => {
           onClick={() => setSelectedProblem(null)}
         >
           <div
-            className="bg-gray-900 border border-purple-500 rounded-lg max-w-2xl w-full transform transition-all"
+            className="bg-gray-900 border  border-purple-500 rounded-3xl max-w-2xl w-full transform transition-all"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="p-6 relative ">
@@ -298,19 +296,19 @@ const ProblemStatements = () => {
               </button>
 
               <div className="mb-4  ">
-                <span className="inline-block px-3 py-1 rounded-full bg-purple-400/10 border border-purple-400 text-purple-400 text-sm mb-2">
+                <span className="inline-block px-3 py-1 rounded-full bg-purple-400/10 border border-purple-400 text-purple-00 text-sm mb-2">
                   {selectedProblem.track}
                 </span>
-                <h2 className="text-3xl text-purple-700 font-extrabold mb-4">
+                <h2 className="text-3xl text-purple-500 font-extrabold mb-4 fonr-['Arial']">
                   {selectedProblem.title}
                 </h2>
-                <p className="text-gray-300 mb-6">{selectedProblem.description}</p>
+                <p className="text-gray-300 mb-6 font-bold">{selectedProblem.description}</p>
               </div>
 
               <div>
                 <h3 className="text-white font-bold font-['Arial'] mb-3 text-lg
                 ">Key Objectives:</h3>
-                <ul className="space-y-2">
+                <ul className="space-y-2 font-['Arial']">
                   {selectedProblem.objectives.map((objective, index) => (
                     <li
                       key={index}
