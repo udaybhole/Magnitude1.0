@@ -83,7 +83,7 @@ function Home() {
       <div className="absolute inset-0" style={{ pointerEvents: 'auto', touchAction: 'auto' }}>
     <Spline 
       scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
-      style={{ width: '100%', height: '100%' }}
+      style={{ width: '100%', height: '100%' ,opacity: 0.9 }}
     />
   </div> 
 
@@ -111,7 +111,7 @@ function Home() {
                     <motion.span
                       key={index}
                       variants={letterVariants}
-                      className="bg-gradient-to-r  from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent inline-block transform-gpu font-extrabold"
+                      className="bg-gradient-to-r  from-blue-600 via-blue-300 to-blue-pale bg-clip-text text-transparent inline-block transform-gpu font-extrabold"
                       style={{
                         display: "inline-block",
                         transformStyle: "preserve-3d",
@@ -445,7 +445,7 @@ function Home() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-['SpaceMission'] mb-4 text-yellow-500"
           >
-            WIN PRIZE POOL OF
+             PRIZE POOL 
           </motion.h2>
 
           <motion.div
