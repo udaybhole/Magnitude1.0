@@ -168,30 +168,21 @@ const ProblemStatements = () => {
 
   return (
     <div>
-      <div className="relative pt-24 sm:bg-black">
-      <div className='relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px]'>
-      <div className="absolute inset-0 pointer-events-auto touch-action-auto">
-      {/* Mobile Spline Model */}
-      <div className="block md:hidden">
-        <VantaBackground></VantaBackground>
-        
-      </div>
-
-      {/* Laptop Spline Model */}
-      <div className="hidden md:block">
-      <Spline
-    scene="https://prod.spline.design/mTwLiP3zC9zAz7Zm/scene.splinecode"
-    style={{ 
-      width: '100%', 
-      height: '100%',
-    }}
-  />
-      </div>
-    </div>
-</div>
 
 
+      <div className="relative  bg-black w-full h-screen">
 
+      <Spline scene="https://prod.spline.design/mTwLiP3zC9zAz7Zm/scene.splinecode" 
+              className="w-full h-full"
+      />
+
+<div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          boxShadow: "inset 0px -100px 50px rgba(0, 0, 0, 1)", // Bottom shadow
+        }}
+      />
+   
 
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
           <motion.h1
@@ -211,7 +202,7 @@ const ProblemStatements = () => {
           </motion.p>
         </div>
 
-        <div className="pt-8 mt-8 border-t border-purple-400 text-center font-['Arial']  ">
+        <div className="pt-3 mt-3 border-t border-purple-400 text-center font-['Arial']  ">
   
 </div>
       </div>
@@ -220,7 +211,7 @@ const ProblemStatements = () => {
 
 
 
-      <div className="py-8 px-4 sm:bg-black">
+      <div className="py-8 px-4 bg-black">
   <div className="max-w-7xl mx-auto">
     <div className="relative overflow-x-auto shadow-md rounded-3xl">
       <table className="w-full text-left table-fixed">
@@ -238,13 +229,13 @@ const ProblemStatements = () => {
               key={problem.id}
               className="bg-gray-900 hover:bg-gray-800 transition-colors"
             >
-              <td className="p-2 md:p-6 text-center font-bold text-sm md:text-base">
+              <td className="p-5 md:p-6 text-center font-bold text-sm md:text-base">
                 {startIndex + index + 1}
               </td>
               <td className="p-2 md:p-6 text-center font-bold text-sm md:text-base truncate">
                 {window.innerWidth < 768 ? problem.track.split('-')[0] : problem.track}
               </td>
-              <td className="p-2 md:p-6 text-center font-bold text-sm md:text-base truncate">
+              <td className="p-3 md:p-6 text-center font-bold text-sm md:text-base truncate">
                 {problem.title}
               </td>
               <td className="p-2 md:p-6 text-center font-bold">

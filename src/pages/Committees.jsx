@@ -13,7 +13,7 @@ const Committees = () => {
     faculty: [
       {
         name: "Dr. Manish Sharma",
-        position: "Faculty Co-ordinator",
+        position: "Hackathon Faculty Co-ordinator",
         image: "/SIR.jpg",
         mail: "https://github.com",
         linkedin: "https://linkedin.com",
@@ -82,57 +82,16 @@ const Committees = () => {
         mail: "udaybhole3104@gmail.com",
         linkedin: "https://www.linkedin.com/in/uday-bhole/",
         instagram: "https://www.instagram.com/_u_dayyy/"
-      },
-      {
-        name: "DINESH AHER",
-        position: "Vice Admiral @CPMC",
-        image: "/dinesh.jpg",
-        mail: "https://Mail.com",
-        linkedin: "https://www.linkedin.com/in/dineshaher/",
-        instagram: "https://instagram.com/dinesh_aher2505"
-      },
-      {
-        name: "PARTH MAGAR",
-        position: "Commander @CPMC",
-        image: "/PARTH.jpg",
-        mail: "parthmagar8@gmail.com",
-        linkedin: "https://www.linkedin.com/in/parth-magar-339044288/",
-        instagram: "https://www.instagram.com/sponge.exee/"
-      }
-      ,
-      {
-        name: "KISHOR MOTE",
-        position: "Commander @CPMC",
-        image: "/Kishor.jpg",
-        mail: "kishormote2003@gmail.com",
-        linkedin: "https://www.linkedin.com/in/kishor-mote-a63988257/",
-        instagram: "https://www.instagram.com/kishor.mote.1428/"
-      },
-      {
-        name: "MOKSHAD PATIL",
-        position: "Commander @CPMC",
-        image: "/Mokshad-Patil.png",
-        mail: "patilmokshadg@gmail.com",
-        linkedin: "https://www.linkedin.com/in/mokshadpatil/",
-        instagram: "https://www.instagram.com/mokshad_patil/"
-      },
-      {
-        name: "JAGDISH RAUT",
-        position: "Commander @CPMC",
-        image: "/jagdish.jpg",
-        mail: "jagdishraut2004@gamil.com",
-        linkedin: "https://www.linkedin.com/in/jagdish-raut-bba036259/",
-        instagram: "https://www.instagram.com/jagdish.2004/"
       }
     ]
   };
 
   const sections = {
-    faculty: "Faculty",
-    organizing: "Organizing Committee",
-    tech: "Tech Committee",
-    management: "Management Committee",
-    maintainers: "Website Maintainers"
+    faculty: "EVENT FACULTY",
+    organizing: "ORGANIZING COMMITTEE",
+    tech: "TECH COMMITTEE",
+    management: "MANAGEMENT COMMITTEE",
+    maintainers: "WEBSITE MAINTAINER"
   };
 
   const CommitteeCard = ({ member }) => (
@@ -195,7 +154,7 @@ const Committees = () => {
       case 'management':
         return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
       case 'maintainers':
-        return 'grid grid-cols-1 md:grid-cols-3 gap-40 auto-rows-max';
+        return 'flex justify-center';
       default:
         return 'grid grid-cols-1 md:grid-cols-3 gap-8';
     }
@@ -223,7 +182,7 @@ const Committees = () => {
               className={`px-6 py-2 rounded-full text-sm md:text-base transition-all duration-300 ${
                 activeSection === key
                   ? 'bg-purple-400 text-white shadow-lg shadow-purple-500/30 font-extrabold'
-                  : 'bg-black border border-purple-700 text-white hover:bg-purple-400 font-extrabold'
+                  : 'bg-black border border-purple-700 text-white hover:bg-purple-400 font-bold'
               }`}
             >
               {label}

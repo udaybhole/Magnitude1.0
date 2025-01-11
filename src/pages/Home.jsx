@@ -84,14 +84,13 @@ function Home() {
       <div className="relative h-screen">
 
     <div className="absolute inset-0 pointer-events-auto touch-action-auto">
-      {/* Mobile Spline Model */}
-      <div className="block md:hidden">
+      <div className="block sm:hidden">
         <VantaBackground></VantaBackground>
         
       </div>
 
-      {/* Laptop Spline Model */}
-      <div className="hidden md:block">
+
+      <div className= "hidden sm:block h-full">
       <Spline
         scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
         style={{ width: '100%', height: '100%' }}
@@ -117,13 +116,13 @@ function Home() {
                   variants={containerVariants}
                   initial="hidden"
                   animate="visible"
-                  className="relative text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] font-['SpaceMission'] leading-none my-4 px-4 flex overflow-hidden"
+                  className="relative text-4xl font-extrabold xs:text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] font-['SpaceMission'] leading-none my-4 px-4 flex overflow-hidden"
                 >
                   {magnitudeText.split("").map((letter, index) => (
                     <motion.span
                       key={index}
                       variants={letterVariants}
-                      className="bg-gradient-to-r  from-blue-600 via-blue-300 to-blue-pale bg-clip-text text-transparent inline-block transform-gpu font-extrabold"
+                      className="bg-gradient-to-r  from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent inline-block transform-gpu font-extrabold"
                       style={{
                         display: "inline-block",
                         transformStyle: "preserve-3d",

@@ -72,7 +72,7 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-300 hover:text-white transition-colors duration-300"
+            className="md:hidden text-gray-300 hover:text-white transition-colors  duration-300"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className="w-6 h-6 flex flex-col justify-between items-center">
