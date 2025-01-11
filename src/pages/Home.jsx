@@ -26,18 +26,7 @@ function Home() {
     });
   }, []);
 
-  const isMobile = window.innerWidth <= 767; // Check if the screen width is 767px or less
-
-  const style = {
-    position: "absolute",
-    inset: "0",
-    pointerEvents: "auto",
-    touchAction: "auto",
-    width: "100%",
-    height: isMobile ? "100vh" : "100%", // Full height on mobile, 100% otherwise
-    objectFit: "contain", // Ensures the model fits without distortion
-
-  };
+  
   const containerVariants = {
     hidden: { opacity: 1 },
     visible: {
@@ -93,12 +82,14 @@ function Home() {
   return (
     <div className="min-h-screen bg-black">
       <div className="relative h-screen">
-      <div style={style}>
+      <div
+      className="absolute inset-0 pointer-events-auto touch-action-auto hidden md:block"
+    >
       <Spline
         scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: '100%', height: '100%' }}
       />
-    </div>
+    </div> 
 
   <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8" style={{ pointerEvents: 'none' }}>
     <motion.div
