@@ -14,6 +14,11 @@ function Footer() {
       role: "CORE COMMITTEE",
       email: "mayankdhote4316@gmail.com",
       phone: "+91 6266764316"
+    },{
+      name: "Aaryan Palve",
+      role: "CORE COMMITTEE",
+      email: "aspalve2004@gmail.com",
+      phone: "+91 9322355783"
     }
    
   ];

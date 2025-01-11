@@ -169,32 +169,37 @@ const ProblemStatements = () => {
   return (
     <div>
       <div className="relative pt-24">
-        <Spline
-          scene="https://prod.spline.design/mTwLiP3zC9zAz7Zm/scene.splinecode"
-          style={{ width: '100%', height: '100%' }}
-        />
+      <div className='relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]'>
+  <Spline
+    scene="https://prod.spline.design/mTwLiP3zC9zAz7Zm/scene.splinecode"
+    style={{ 
+      width: '100%', 
+      height: '100%',
+      maxWidth: '100vw',
+      objectFit: 'contain'
+    }}
+  />
+</div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent font-extrabold"
+            className="text-4xl md:text-5xl flex justify-center pt-14 font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent font-extrabold"
           >
             PROBLEM STATEMENTS
             
           </motion.h1>
+          
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-lg sm:text-xl md:text-2xl font-['Arial'] text-purple-200 font-extrabold"
           >
-            Innovation begins where challenges meet creativity.
           </motion.p>
         </div>
 
         <div className="pt-8 mt-8 border-t border-purple-400/30 text-center font-['Arial'] font-extrabold text-xl ">
-  Each problem statement is a gateway to revolutionizing industries and solving real-world challenges.
-  <br />
-  Pick your track, dive into the problem, and let your ideas make an impact!
+  
 </div>
       </div>
 
@@ -203,59 +208,63 @@ const ProblemStatements = () => {
 
 
       <div className="py-8 px-4 bg-dark-blue">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative overflow-x-auto shadow-md rounded-3xl">
-            <table className="w-full text-left table-fixed">
-              <thead className="bg-gray-800 text-gray-200">
-                <tr>
-                  <th className="p-6 w-1/4 text-center text-purple-500 font-extrabold font-['Arial']">Sr No.</th>
-                  <th className="p-6 w-1/4 text-center text-purple-500 font-extrabold font-['Arial']">Track ID</th>
-                  <th className="p-6 w-1/4 text-center text-purple-500 font-extrabold font-['Arial']">Problem Title</th>
-                  <th className="p-6 w-1/4 text-center text-purple-500 font-extrabold font-['Arial']">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-700">
-                {currentProblems.map((problem, index) => (
-                  <tr
-                    key={problem.id}
-                    className="bg-gray-900 hover:bg-gray-800 transition-colors"
-                  >
-                    <td className="p-6 text-center font-bold">{startIndex + index + 1}</td>
-                    <td className="p-6 text-center font-bold">{problem.track}</td>
-                    <td className="p-6 text-center font-bold">{problem.title}</td>
-                    <td className="p-6 text-center font-bold">
-                      <button
-                        onClick={() => setSelectedProblem(problem)}
-                        className="px-6 py-2 bg-black text-white rounded-full hover:bg-purple-700 transition-colors"
-                      >
-                        Details
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+  <div className="max-w-7xl mx-auto">
+    <div className="relative overflow-x-auto shadow-md rounded-3xl">
+      <table className="w-full text-left table-fixed">
+        <thead className="bg-gray-800 text-gray-200">
+          <tr>
+            <th className="p-2 md:p-6 w-[15%] text-center text-purple-500 font-extrabold font-['Arial'] text-sm md:text-base">Sr. No</th>
+            <th className="p-2 md:p-6 w-[25%] text-center text-purple-500 font-extrabold font-['Arial'] text-sm md:text-base">Track ID</th>
+            <th className="p-2 md:p-6 w-[35%] text-center text-purple-500 font-extrabold font-['Arial'] text-sm md:text-base">Title</th>
+            <th className="p-2 md:p-6 w-[25%] text-center text-purple-500 font-extrabold font-['Arial'] text-sm md:text-base">Actions</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-700">
+          {currentProblems.map((problem, index) => (
+            <tr
+              key={problem.id}
+              className="bg-gray-900 hover:bg-gray-800 transition-colors"
+            >
+              <td className="p-2 md:p-6 text-center font-bold text-sm md:text-base">
+                {startIndex + index + 1}
+              </td>
+              <td className="p-2 md:p-6 text-center font-bold text-sm md:text-base truncate">
+                {window.innerWidth < 768 ? problem.track.split('-')[0] : problem.track}
+              </td>
+              <td className="p-2 md:p-6 text-center font-bold text-sm md:text-base truncate">
+                {problem.title}
+              </td>
+              <td className="p-2 md:p-6 text-center font-bold">
+                <button
+                  onClick={() => setSelectedProblem(problem)}
+                  className="px-3 md:px-6 py-1 md:py-2 text-sm md:text-base bg-black text-white rounded-full hover:bg-purple-700 transition-colors"
+                >
+                  Details
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
 
-
-
-          <div className="flex justify-center items-center mt-6">
-            {Array.from({ length: totalPages }, (_, index) => (
-              <button
-                key={index}
-                onClick={() => handlePageChange(index + 1)}
-                className={`px-4 py-2 mx-1 rounded-full ${
-                  currentPage === index + 1
-                    ? "bg-purple-700 text-white"
-                    : "bg-gray-800 text-gray-300 hover:bg-purple-700 hover:text-white"
-                }`}
-              >
-                {index + 1}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
+    <div className="flex justify-center items-center mt-6 flex-wrap gap-2">
+      {Array.from({ length: totalPages }, (_, index) => (
+        <button
+          key={index}
+          onClick={() => handlePageChange(index + 1)}
+          className={`px-3 md:px-4 py-1 md:py-2 mx-1 rounded-full text-sm md:text-base ${
+            currentPage === index + 1
+              ? "bg-purple-700 text-white"
+              : "bg-gray-800 text-gray-300 hover:bg-purple-700 hover:text-white"
+          }`}
+        >
+          {index + 1}
+        </button>
+      ))}
+    </div>
+  </div>
+</div>
 
       {/* Modal */}
       {selectedProblem && (
