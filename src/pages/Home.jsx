@@ -86,7 +86,7 @@ function Home() {
       style={{ width: '100%', height: '100%' }}
     />
   </div> 
-       
+
   <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8" style={{ pointerEvents: 'none' }}>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -159,13 +159,14 @@ function Home() {
                   </p>
                 </div>
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-6 py-2 bg-purple-200/5 hover:bg-purple-400 rounded-full 
-                    border border-purple-700 text-white transition-all duration-300 font-['Arial'] font-bold"
-                >
-                  Check Updates
-                </motion.button>
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="px-4 sm:px-6 py-2 bg-purple-200/5 hover:bg-purple-400 
+          rounded-full border border-purple-700 text-white transition-all 
+          duration-300 font-bold text-sm sm:text-base touch-manipulation"
+      >
+        Check Updates
+      </motion.button>
               </div>
             </div>
           </motion.div>
