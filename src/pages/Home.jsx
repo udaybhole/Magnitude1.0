@@ -80,12 +80,12 @@ function Home() {
   return (
     <div className="min-h-screen bg-black">
       <div className="relative h-screen">
-      <div className="absolute inset-0" style={{ pointerEvents: 'auto', touchAction: 'auto' }}>
+      {/* <div className="absolute inset-0" style={{ pointerEvents: 'auto', touchAction: 'auto' }}>
     <Spline 
       scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
       style={{ width: '100%', height: '100%' }}
     />
-  </div> 
+  </div>  */}
 
   <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8" style={{ pointerEvents: 'none' }}>
     <motion.div
@@ -172,7 +172,6 @@ function Home() {
           </motion.div>
         </div>
 
-         {/* Updates Modal */}
          <AnimatePresence>
   {showUpdates && (
     <motion.div
@@ -182,10 +181,8 @@ function Home() {
       className="fixed inset-0 z-50 flex items-center justify-center px-4"
       onClick={() => setShowUpdates(false)}
     >
-      {/* Modal Backdrop */}
       <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
 
-      {/* Modal Content */}
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -193,13 +190,11 @@ function Home() {
         onClick={(e) => e.stopPropagation()}
         className="relative bg-black/90 rounded-xl p-6 md:p-8 max-w-2xl w-full"
       >
-        {/* Header Section */}
         <div className="relative bg-black/90 border-b border-white/100 pb-4">
           <h2 className="text-3xl font-['SpaceMission'] text-purple-700 tracking-wider">
             LATEST UPDATES
           </h2>
 
-          {/* Close Button */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -224,7 +219,7 @@ function Home() {
           </motion.button>
         </div>
 
-        {/* Updates Section (Scrollable) */}
+
         <div
           className="space-y-6 overflow-y-auto max-h-[50vh] mt-4 pr-4 
             [&::-webkit-scrollbar]:w-2
@@ -259,7 +254,7 @@ function Home() {
 </AnimatePresence>
 
 
-        {/* Timeline Section */}
+
         <div className="max-w-5xl mx-auto py-20 px-4">
           <div className="relative">
             <motion.h2
@@ -315,9 +310,9 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="absolute left-0 top-3 md:static md:my-0 z-10">
-                  <div className="w-4 h-4 bg-purple-400 rounded-full" ></div>
-                </div>
+                <div className="absolute left-0 top-3 md:static md:my-0 z-10 hidden md:block">
+  <div className="w-4 h-4 bg-purple-400 rounded-full"></div>
+</div>
 
                 <div className="flex-1 md:pl-8 md:invisible" />
               </motion.div>
@@ -366,9 +361,9 @@ function Home() {
     </div>
   </div>
 
-  <div className="absolute right-0 top-3 md:static md:my-0 z-10">
-    <div className="w-4 h-4 bg-purple-400 rounded-full" ></div>
-  </div>
+  <div className="absolute right-0 top-3 md:static md:my-0 z-10 hidden md:block">
+  <div className="w-4 h-4 bg-purple-400 rounded-full"></div>
+</div>
 
   <div className="flex-1 md:pr-8 md:invisible" />
 </motion.div>
@@ -416,9 +411,9 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="absolute left-0 top-3 md:static md:my-0 z-10">
-                  <div className="w-4 h-4 bg-purple-400 rounded-full" />
-                </div>
+                <div className="absolute left-0 top-3 md:static md:my-0 z-10 hidden md:block">
+  <div className="w-4 h-4 bg-purple-400 rounded-full" />
+</div>
 
                 <div className="flex-1 md:pl-8 md:invisible" />
               </motion.div>
