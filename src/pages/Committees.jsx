@@ -77,12 +77,20 @@ const Committees = () => {
     maintainers: [
       {
         name: "UDAY BHOLE",
-        position: "Vice Admiral @CPMC",
+        position: "Web Devlopment Lead",
         image: "/UDAY.jpg",
         mail: "udaybhole3104@gmail.com",
         linkedin: "https://www.linkedin.com/in/uday-bhole/",
         instagram: "https://www.instagram.com/_u_dayyy/"
-      }
+      },
+      {
+        name: "DINESH AHER",
+        position: "Web Devlopment Co-Lead",
+        image: "/dinesh.jpg",
+        mail: "https://Mail.com",
+        linkedin: "https://www.linkedin.com/in/dineshaher/",
+        instagram: "https://instagram.com/dinesh_aher2505"
+      },
     ]
   };
 
@@ -154,7 +162,7 @@ const Committees = () => {
       case 'management':
         return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
       case 'maintainers':
-        return 'flex justify-center';
+        return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
       default:
         return 'grid grid-cols-1 md:grid-cols-3 gap-8';
     }
