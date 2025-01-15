@@ -136,7 +136,7 @@ function About() {
           name: "IASC",
           logo: "IASC.png",
           link: "https://iasc-web2.vercel.app/",
-          title: "Intel AI Student Association.",
+          title: "Intel AI Student Club.",
           description:
             'The "Intel AI Students Club" (IASC) at DYPCOE is a thriving community committed to fostering innovation, collaboration, and skill development in the field of Artificial Intelligence. The club provides a platform for students to explore and implement AI-driven solutions across diverse domains such as web development, Android applications, the Internet of Things (IoT), and beyond.',
         },
