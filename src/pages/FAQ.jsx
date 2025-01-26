@@ -7,49 +7,49 @@ const faqData = [
     answer: "The Team Size For The Hackathon Is Between 2-4 Members.",
   },
   {
-    question: "Will Accommodation Be Provided?",
+    question: "Can participants join more than one team?",
     answer:
-      "No, Participants Will Have To Look For Accommodations On Their Own.",
+      "No, participants are allowed to join only one team to ensure fairness.",
   },
   {
-    question: "What Do I Need To Carry With Me?",
+    question: "Are cross-college teams allowed?",
     answer:
-      "Participants need to bring their laptops, chargers, student ID cards, and any other necessary development tools.",
+      "Yes, teams with members from different colleges are welcome and encouraged.",
   },
   {
-    question: "Can We Apply For Multiple Tracks?",
+    question: "Are there any restrictions on team names?",
     answer:
-      "Yes, teams can apply for multiple tracks but will need to choose one track for the final hackathon.",
+      "Yes, team names must be unique and must not include the names of institutes.",
   },
   {
-    question: "How Will You Choose The Top 3 Teams Per Track?",
+    question: "How will shortlisted teams be notified?",
     answer:
-      "Teams will be evaluated based on innovation, technical complexity, practical implementation, and presentation quality.",
+      "Nominated team leaders will receive an email notification with further details.",
   },
   {
-    question: "What Is A Hackathon?",
+    question: "Who will participate in the online quiz?",
     answer:
-      "A hackathon is a coding event where participants collaborate in teams to create innovative solutions within a specified timeframe.",
+      "Only the team leader is expected to participate in the quiz.",
   },
   {
-    question: "What Will Be The Registration Cost?",
+    question: "When will the problem statement be released?",
     answer:
-      "Registration costs and payment details will be announced on our website and social media channels.",
+      "The problem statement will be released 3 hours before the start of the Grand Finale.",
+  },
+  
+  {
+    question: "Will food and accommodation be provided?",
+    answer:
+      "Yes, food and accommodation will be provided for all participants during the hackathon.",
   },
   {
-    question: "How do I Know My Registration Is Confirmed?",
+    question: "Who will evaluate the ideas?",
     answer:
-      "You will receive a confirmation email once your registration and payment are successfully processed.",
-  },
-  {
-    question: "Will You Be Providing Meals?",
+      "Industry experts will evaluate the ideas to ensure fairness and unbiased judgment.",
+  },{
+    question: " What should I do if I encounter issues during registration?",
     answer:
-      "Yes, meals will be provided for all registered participants throughout the hackathon.",
-  },
-  {
-    question: "How Are The Winners Decided?",
-    answer:
-      "Winners are selected by a panel of expert judges based on innovation, technical implementation, and presentation quality.",
+      "For any registration issues, you can email udaybhole3104@gmail.com for assistance.",
   },
 ];
 

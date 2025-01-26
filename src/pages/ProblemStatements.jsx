@@ -199,19 +199,18 @@ const ProblemStatements = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-lg sm:text-xl md:text-2xl font-['Arial'] text-purple-200 font-extrabold"
           >
+             WILL BE ANNOUNCED BEFORE THE GRAND FINALE.
           </motion.p>
         </div>
 
-        <div className="pt-3 mt-3 border-t border-purple-400 text-center font-['Arial']  ">
-  
-</div>
+        
       </div>
 
 
 
 
 
-      <div className="py-8 px-4 bg-black">
+      {/* <div className="py-8 px-4 bg-black">
   <div className="max-w-7xl mx-auto">
     <div className="relative overflow-x-auto shadow-md rounded-3xl">
       <table className="w-full text-left table-fixed">
@@ -268,10 +267,10 @@ const ProblemStatements = () => {
       ))}
     </div>
   </div>
-</div>
+</div> */}
 
       {/* Modal */}
-      {selectedProblem && (
+      {/* {selectedProblem && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
           onClick={() => setSelectedProblem(null)}
@@ -329,7 +328,7 @@ const ProblemStatements = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

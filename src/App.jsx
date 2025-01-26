@@ -6,7 +6,6 @@ import Guidelines from "./pages/Guidelines";
 import Committees from "./pages/Committees";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
-import IdeaSubmission from "./pages/IdeaSubmission";
 import useScrollToTop from './hooks/useScrollToTop';
 
 

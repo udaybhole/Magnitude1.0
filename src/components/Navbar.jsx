@@ -17,10 +17,10 @@ function Navbar() {
 
   const navigation = [
     { name: "Home", href: "/" },
+    { name: "Register Here", href: "https://unstop.com/p/magnitude-dr-d-y-patil-college-of-engineering-dypcoe-akurdi-pune-1372166" },
     { name: "Problem Statements", href: "/problems" },
     { name: "Committees", href: "/committees" },
     { name: "About", href: "/about" },
-
     { name: "Guidelines", href: "/guidelines" },
     { name: "FAQ", href: "/faq" },
       ];

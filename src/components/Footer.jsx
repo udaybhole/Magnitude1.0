@@ -38,23 +38,29 @@ function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2">
+            <li>
+                <Link to="/https://unstop.com/p/magnitude-dr-d-y-patil-college-of-engineering-dypcoe-akurdi-pune-1372166" className="text-gray-400 hover:text-purple-400 transition-colors text-lg font-['Arial']">
+                  Register Here
+                </Link>
+              </li>
               <li>
-                <Link to="/problems" className="text-gray-400 hover:text-purple-400 transition-colors text-sm font-['Arial']">
+              
+                <Link to="/problems" className="text-gray-400 hover:text-purple-400 transition-colors text-lg font-['Arial']">
                   Problem Statements
                 </Link>
               </li>
               <li>
-                <Link to="/guidelines" className="text-gray-400 hover:text-purple-400 transition-colors text-sm font-['Arial']">
+                <Link to="/guidelines" className="text-gray-400 hover:text-purple-400 transition-colors text-lg font-['Arial']">
                   Guidelines
                 </Link>
               </li>
               <li>
-                <Link to="/submit" className="text-gray-400 hover:text-purple-400 transition-colors text-sm font-['Arial']">
+                <Link to="/submit" className="text-gray-400 hover:text-purple-400 transition-colors text-lg font-['Arial']">
                   Submit Idea
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-gray-400 hover:text-purple-400 transition-colors text-sm font-['Arial']">
+                <Link to="/faq" className="text-gray-400 hover:text-purple-400 transition-colors text-lg font-['Arial']">
                   FAQ
                 </Link>
               </li>

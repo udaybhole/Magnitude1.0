@@ -58,25 +58,25 @@ function Home() {
 
   const updates = [
     {
-      date: "15 Jan 2024",
-      title: "Registration Date Extended",
-      description: "Registration deadline has been extended to 26th January 2024."
+      // date: "15 Jan 2024",
+      title: "No Updates Available...",
+      // description: "Registration deadline has been extended to 26th January 2024."
     },
-    {
-      date: "12 Jan 2024",
-      title: "New Problem Statement Added",
-      description: "A new problem statement in the AI/ML track has been added. Check the Problems page for details."
-    },
-    {
-      date: "10 Jan 2024",
-      title: "PPT Template Available",
-      description: "The official presentation template is now available for download."
-    },
-    {
-      date: "8 Jan 2024",
-      title: "Mentorship Program",
-      description: "Industry experts will be providing mentorship during the development phase."
-    },
+    // {
+    //   date: "12 Jan 2024",
+    //   title: "New Problem Statement Added",
+    //   description: "A new problem statement in the AI/ML track has been added. Check the Problems page for details."
+    // },
+    // {
+    //   date: "10 Jan 2024",
+    //   title: "PPT Template Available",
+    //   description: "The official presentation template is now available for download."
+    // },
+    // {
+    //   date: "8 Jan 2024",
+    //   title: "Mentorship Program",
+    //   description: "Industry experts will be providing mentorship during the development phase."
+    // },
   ];
 
   return (
@@ -132,7 +132,7 @@ function Home() {
                     </motion.span>
                   ))}
                 </motion.div>
-                <span className="text-3xl xs:text-4xl md:text-5xl font-['SpaceMission'] tracking-[0.2em] text-white">
+                <span className="text-3xl xs:text-4xl md:text-5xl  font-['SpaceMission'] tracking-[0.2em] text-white">
                   2K
                   <motion.span
                     animate={controls}
@@ -294,30 +294,21 @@ function Home() {
                   <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:ml-auto md:w-[380px]">
                     <div className="flex  justify-start md:justify-start gap-3 mb-4">
                       <h3 className="text-3xl text-purple-400 tracking-wider font-['SpaceMission'] font-bold">
-                        PHASE 01
+                        PHASE 01.
                       </h3>
                       <BsCalendar2Check className="text-2xl text-white" />
                     </div>
                     <h4 className="text-xl font-['Arial'] text-white mb-2 font-extrabold">
-                      Registration & Idea Submission
+                      Registration. 
                     </h4>
                     <p className="text-gray-400 mb-3 font-['Arial']">
-                      26th January - 15th February 2024
+                      26th January - 14th February 2024
                     </p>
                     <ul className="text-sm text-gray-400 space-y-1">
                       <li className="flex items-center md:justify-start gap-2 font-['Arial']">
                       <span className="text-purple-100">•</span>
-                        <span>Team Formation & Registration</span>
-                      </li>
-                      <li className="flex items-center md:justify-start gap-2 font-['Arial']">
-                      <span className="text-purple-100">•</span>
-                        <span>Problem Statement Selection</span>
-                       
-                      </li>
-                      <li className="flex items-center md:justify-start gap-2 font-['Arial']">
-                      <span className="text-purple-100">•</span>
-                        <span>Initial Proposal Submission</span>
-                      </li>
+                        <span>Team Formation & Registration.</span>
+                      </li> 
                     </ul>
                   </div>
                 </div>
@@ -343,31 +334,26 @@ function Home() {
     <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300  group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:mr-auto md:w-[380px]">
       <div className="flex items-center md:justify-start gap-3 mb-4">
         <h3 className="text-3xl text-purple-400 tracking-wider font-['SpaceMission'] font-bold">
-          PHASE 02
+          PHASE 02.
         </h3>
         <BsLightbulb className="text-2xl text-blue-pale" />
       </div>
       <h4 className="text-xl font-['Arial'] text-white mb-2 font-extrabold">
-        Online Evaluation
+        Online Evaluation.
       </h4>
       <p className="text-gray-400 mb-3 font-['Arial']">
-        20th February - 25th February 2024
+        16th February 
       </p>
       <ul className="text-sm text-gray-400 space-y-1">
         <li className="flex items-center md:justify-start gap-2 font-['Arial']">
         <span className="text-purple-100">•</span>
 
-          <span>Expert Review Process</span>
+          <span>MCQ Format Online Evaluation.</span>
         </li>
         <li className="flex items-center md:justify-start gap-2 font-['Arial']">
         <span className="text-purple-100">•</span>
 
-          <span>Shortlisting of Teams</span>
-        </li>
-        <li className="flex items-center md:justify-start gap-2 font-['Arial']">
-        <span className="text-purple-100">•</span>
-
-          <span>Feedback & Improvements</span>
+          <span>Topic: APTITUDE, CS Fundamentals, DSA, WEB & AI/Ml.</span>
         </li>
       </ul>
     </div>
@@ -395,29 +381,26 @@ function Home() {
                   <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300  group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:ml-auto md:w-[380px]">
                     <div className="flex items-center md:justify-start justify-start  gap-3 mb-4">
                       <h3 className="text-3xl text-purple-400 tracking-wider font-bold font-['SpaceMIssion']">
-                        FINAL PHASE
+                        Phase 03.
                       </h3>
                       <BsTrophy className="text-2xl text-white" />
                     </div>
                     <h4 className="text-xl text-white mb-2 font-['Arial'] font-extrabold text-start">
-                      Grand Finale
+                      Online Evaluation Results.
                     </h4>
                     <p className="text-gray-400 mb-3 font-['Arial'] text-start font-bold">
-                      15th March 2024
+                      18th February 2024
                     </p>
                     <ul className="text-sm text-gray-400 space-y-1 font-bold" >
-                      <li className="flex items-center md:justify-start gap-2 font-['Arial']  ">
-                      <span className="text-purple-100">•</span>
-                        <span>Final Presentations</span>
-                      </li>
+
                       <li className="flex items-center md:justify-start gap-2 font-['Arial']">
                       <span className="text-purple-100">•</span>
-                        <span>Project Exhibition</span>
-                       
+                        <span>Teams Announcement.</span>
                       </li>
+
                       <li className="flex items-center md:justify-start gap-2 font-['Arial']">
                       <span className="text-purple-100">•</span>
-                        <span>Winners Announcement</span>
+                        <span>Invitation For The Grand Finale.</span>
                       </li>
                     </ul>
                   </div>
@@ -429,6 +412,59 @@ function Home() {
 
                 <div className="flex-1 md:pl-8 md:invisible" />
               </motion.div>
+
+             
+
+
+
+
+              
+<motion.div
+initial={{ opacity: 0, x: 100 }}
+whileInView={{ opacity: 1, x: 0 }}
+viewport={{ once: true }}
+className="relative flex flex-col md:flex-row-reverse items-start md:items-center md:justify-between group pl-12 md:pl-0"
+>
+<div className="flex-1 md:text-left md:pl-8 font-['Arial'] font-bold">
+<div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300  group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:mr-auto md:w-[380px]">
+<div className="flex items-center md:justify-start gap-3 mb-4">
+<h3 className="text-3xl text-purple-400 tracking-wider font-['SpaceMission'] font-bold">
+FINAL PHASE.
+</h3>
+<BsTrophy className="text-2xl text-white" />
+                    </div>
+                    <h4 className="text-xl text-white mb-2 font-['Arial'] font-extrabold text-start">
+                      Grand Finale.
+                    </h4>
+                    <p className="text-gray-400 mb-3 font-['Arial'] text-start font-bold">
+                      22th - 23th February 2024
+                    </p>
+                    <ul className="text-sm text-gray-400 space-y-1 font-bold" >
+                      <li className="flex items-center md:justify-start gap-2 font-['Arial']  ">
+                      <span className="text-purple-100">•</span>
+                        <span>Problem Statement Announcement.</span>
+                      </li>
+                      <li className="flex items-center md:justify-start gap-2 font-['Arial']">
+                      <span className="text-purple-100">•</span>
+                        <span>Project Exhibition & Presentation.</span>
+                       
+                      </li>
+                      <li className="flex items-center md:justify-start gap-2 font-['Arial']">
+                      <span className="text-purple-100">•</span>
+                        <span>Winners Announcement.</span>
+                      </li>
+                    </ul>
+</div>
+</div>
+
+<div className="absolute right-0 top-3 md:static md:my-0 z-10 hidden md:block">
+<div className="w-4 h-4 bg-purple-400 rounded-full"></div>
+</div>
+
+<div className="flex-1 md:pr-8 md:invisible" />
+</motion.div>
+
+              
             </div>
           </div>
         </div>
@@ -467,7 +503,7 @@ function Home() {
             onViewportEnter={() => {
               if (prizeCount === 0) {
                 prizeControls.start({
-                  count: 100000,
+                  count: 85000,
                   transition: {
                     duration: 2.5,
                     ease: "easeOut",
