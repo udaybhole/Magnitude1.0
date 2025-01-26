@@ -353,7 +353,7 @@ function Home() {
         <li className="flex items-center md:justify-start gap-2 font-['Arial']">
         <span className="text-purple-100">•</span>
 
-          <span>Topic: APTITUDE, CS Fundamentals, DSA, WEB & AI/Ml.</span>
+          <span>Topic: APTITUDE, CS Fundamentals, DSA, WEB & AI/ML.</span>
         </li>
       </ul>
     </div>
