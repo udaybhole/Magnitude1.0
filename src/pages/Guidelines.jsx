@@ -16,7 +16,7 @@ function Guidelines() {
         "The team leader is responsible for entering all team details. Once submitted, these details cannot be modified.",
         "Team names must be unique and should not contain institute names.",  
         "Registration Fee: ₹ 400/-",
-        "Multiple idea submissions allowed with separate registrations and fees.",
+        
       ]
     },
     {
@@ -38,7 +38,7 @@ function Guidelines() {
       ]
     },
     {
-      title: "Round 2 (Grand Finale)",
+      title: "Round 2",
       points: [
         "Round 2 will consist of a 24-hour offline hackathon, scheduled to take place at D.Y.Patil College of Engineering, Akurdi on 22-23 th February.",
         "The problem statement will be released 3 hours prior to the beginning of the hackathon.",
@@ -54,7 +54,7 @@ function Guidelines() {
       points: [
         "Ideas will be evaluated by industry experts to ensure fairness and unbiased judgment.",
         "Evaluation will be based on the following criteria:",
-        "Complexityv: The technical challenge and depth of the idea.",
+        "Complexity: The technical challenge and depth of the idea.",
         "Clarity : Precision and coherence in the team’s presentation and Q&A.",
         "Feasibility : Practicality and ease of implementation.",
         "Practicability : Real-world applicability of the proposed solution.",

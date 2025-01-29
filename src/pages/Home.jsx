@@ -294,12 +294,12 @@ function Home() {
                   <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:ml-auto md:w-[380px]">
                     <div className="flex  justify-start md:justify-start gap-3 mb-4">
                       <h3 className="text-3xl text-purple-400 tracking-wider font-['SpaceMission'] font-bold">
-                        PHASE 01.
+                        PHASE 01
                       </h3>
                       <BsCalendar2Check className="text-2xl text-white" />
                     </div>
                     <h4 className="text-xl font-['Arial'] text-white mb-2 font-extrabold">
-                      Registration. 
+                       REGISTRATION
                     </h4>
                     <p className="text-gray-400 mb-3 font-['Arial']">
                       26th January - 14th February 2024
@@ -334,12 +334,12 @@ function Home() {
     <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300  group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:mr-auto md:w-[380px]">
       <div className="flex items-center md:justify-start gap-3 mb-4">
         <h3 className="text-3xl text-purple-400 tracking-wider font-['SpaceMission'] font-bold">
-          PHASE 02.
+          PHASE 02
         </h3>
         <BsLightbulb className="text-2xl text-blue-pale" />
       </div>
       <h4 className="text-xl font-['Arial'] text-white mb-2 font-extrabold">
-        Online Evaluation.
+         ONLINE EVALUATION
       </h4>
       <p className="text-gray-400 mb-3 font-['Arial']">
         16th February 
@@ -381,12 +381,12 @@ function Home() {
                   <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300  group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:ml-auto md:w-[380px]">
                     <div className="flex items-center md:justify-start justify-start  gap-3 mb-4">
                       <h3 className="text-3xl text-purple-400 tracking-wider font-bold font-['SpaceMIssion']">
-                        Phase 03.
+                        Phase 03
                       </h3>
                       <BsTrophy className="text-2xl text-white" />
                     </div>
                     <h4 className="text-xl text-white mb-2 font-['Arial'] font-extrabold text-start">
-                      Online Evaluation Results.
+                     ONLINE EVALUATION RESULTS
                     </h4>
                     <p className="text-gray-400 mb-3 font-['Arial'] text-start font-bold">
                       18th February 2024
@@ -429,12 +429,11 @@ className="relative flex flex-col md:flex-row-reverse items-start md:items-cente
 <div className="relative p-6 bg-black/30 backdrop-blur-sm rounded-xl border-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300  group-hover:shadow-[0_0_15px_rgba(147,197,253,0.15)] md:mr-auto md:w-[380px]">
 <div className="flex items-center md:justify-start gap-3 mb-4">
 <h3 className="text-3xl text-purple-400 tracking-wider font-['SpaceMission'] font-bold">
-FINAL PHASE.
-</h3>
+FINAL PHASE</h3>
 <BsTrophy className="text-2xl text-white" />
                     </div>
                     <h4 className="text-xl text-white mb-2 font-['Arial'] font-extrabold text-start">
-                      Grand Finale.
+                     GRAND FINALE
                     </h4>
                     <p className="text-gray-400 mb-3 font-['Arial'] text-start font-bold">
                       22th - 23th February 2024

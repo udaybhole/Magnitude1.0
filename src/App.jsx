@@ -9,8 +9,6 @@ import FAQ from "./pages/FAQ";
 import useScrollToTop from './hooks/useScrollToTop';
 
 
-
-
 function AppContent() {
   useScrollToTop();
 

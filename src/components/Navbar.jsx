@@ -39,9 +39,9 @@ function Navbar() {
             to="/" 
             className="relative group flex items-center gap-3 transition-transform duration-300 hover:scale-105"
           >
-            <div className="h-20 flex items-center">
+            <div className="h-12 flex items-center">
               <img 
-                src="/LOGO HACK.png" 
+                src="/Asset 7.svg" 
                 alt="Magnitude Logo" 
                 className="h-full w-auto object-contain cursor-pointer "
               />
