@@ -33,7 +33,7 @@ const Committees = () => {
         name: "UDAY BHOLE",
         position: "Core Committee",
         image: "/UDAY.jpg",
-        mail: "udaybhole3014@gmail.com",
+        mail: "udaybhole3104@gmail.com",
         linkedin: "https://www.linkedin.com/in/uday-bhole/",
         instagram: "https://www.instagram.com/_u_dayyy/"
       },
@@ -179,7 +179,7 @@ const Committees = () => {
         </h1>
 
         <h4 className="text-1xl md:text-3xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-700 via-purple-400 to-purple-50 bg-clip-text text-transparent">
-          MEET OUR TEAM.
+          MEET OUR TEAM
         </h4>
 
         <div className="pt-4 flex flex-wrap justify-between items-center gap-4 mb-12 px-4">
