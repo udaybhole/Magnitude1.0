@@ -302,12 +302,12 @@ function Home() {
                        REGISTRATION
                     </h4>
                     <p className="text-gray-400 mb-3 font-['Arial']">
-                      26th January - 14th February 2024
+                      26th January - 16th February 2024
                     </p>
                     <ul className="text-sm text-gray-400 space-y-1">
                       <li className="flex items-center md:justify-start gap-2 font-['Arial']">
                       <span className="text-purple-100">•</span>
-                        <span>Team Formation & Registration.</span>
+                        <span> Registration and Payment Of Respective Team.</span>
                       </li> 
                     </ul>
                   </div>
@@ -339,21 +339,14 @@ function Home() {
         <BsLightbulb className="text-2xl text-blue-pale" />
       </div>
       <h4 className="text-xl font-['Arial'] text-white mb-2 font-extrabold">
-         ONLINE EVALUATION
+         TEAM FORMATION
       </h4>
-      <p className="text-gray-400 mb-3 font-['Arial']">
-        16th February 
-      </p>
+      
       <ul className="text-sm text-gray-400 space-y-1">
         <li className="flex items-center md:justify-start gap-2 font-['Arial']">
         <span className="text-purple-100">•</span>
 
-          <span>MCQ Format Online Evaluation.</span>
-        </li>
-        <li className="flex items-center md:justify-start gap-2 font-['Arial']">
-        <span className="text-purple-100">•</span>
-
-          <span>Topic: APTITUDE, CS Fundamentals, DSA, WEB & AI/ML.</span>
+          <span>2-4 Member's Team</span>
         </li>
       </ul>
     </div>
@@ -386,10 +379,10 @@ function Home() {
                       <BsTrophy className="text-2xl text-white" />
                     </div>
                     <h4 className="text-xl text-white mb-2 font-['Arial'] font-extrabold text-start">
-                     ONLINE EVALUATION RESULTS
+                     ONLINE INVITATIONS
                     </h4>
                     <p className="text-gray-400 mb-3 font-['Arial'] text-start font-bold">
-                      18th February 2024
+                      
                     </p>
                     <ul className="text-sm text-gray-400 space-y-1 font-bold" >
 
