@@ -143,6 +143,18 @@ function Home() {
                 </span>
               </div>
             </h1>
+            <motion.button
+            onClick={()=>{
+               window.open("https://unstop.com/p/magnitude-dr-d-y-patil-college-of-engineering-dypcoe-akurdi-pune-1372166" )
+            }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="px-4 sm:px-6 mt-6 py-2 bg-purple-200/5 hover:bg-purple-400 
+          rounded-full border border-2 border-purple-400 text-white transition-all 
+          duration-300 font-bold text-sm sm:text-base touch-manipulation"
+      >
+        REGISTER HERE
+      </motion.button>
           </motion.div>
         </div>
       </div>
