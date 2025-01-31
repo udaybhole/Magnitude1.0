@@ -22,30 +22,21 @@ function Guidelines() {
     {
       title: "Mode of Hackathon",
       points: [
-        "The hackathon will be conducted in two rounds:",
-        "Round 1: Held online on Unstop on 16th February 2025.",
-        "Round 2 (Final Round): Held offline at DYPCOE on 22nd and 23rd February 2025.",
+        "Final Round:",
+        "Held offline at DYPCOE on 22nd and 23rd February 2025.",
       ]
     },
     {
-      title: "Round 1",
+      title: "Hackathon Round",
       points: [
-        "The team leader will receive an email with the details of the online quiz, and only the team leader is expected to participate in the quiz.",
-        "The quiz will consist of 45 questions with a time duration of 30 minutes. The questions will primarily focus on topics related to technical concepts.",
-        "The results of the Round 1 will be announced on 18th February 2025.",
-        "Only 35 teams will be shortlisted for further round.",
-        "Nominated team leaders will receive email notifications."
-      ]
-    },
-    {
-      title: "Round 2",
-      points: [
-        "Round 2 will consist of a 24-hour offline hackathon, scheduled to take place at D.Y.Patil College of Engineering, Akurdi on 22-23 th February.",
+        "It will consist of a 24-hour offline hackathon, scheduled to take place at D.Y.Patil College of Engineering, Akurdi on 22-23 th February.",
         "The problem statement will be released 3 hours prior to the beginning of the hackathon.",
-        "Participants will have 7 minutes to pitch their idea and 3 minutes for a Q&A session with the judges.",
-        "The final evaluation by the judges will assess aspects such as innovation, technical implementation, and presentation.",
-        "Participants must manage their time effectively to complete their project within the 24-hour window.",
-        "Food and Accommodation will be provided for all participants during the course of the hackathon.",
+        "The hackathon will consist of three evaluation rounds, each round will assess specific aspects of the project, such as innovation, technical implementation and presentation.",
+        "Each Round will consist of:",
+"7 minutes for pitching the idea.",
+"3 minutes for a Q&A session.",
+        "Participants must manage their time effectively to meet deadlines for each round.",
+        "The final submission should be completed within the 24-hour window.",
         "The final results will be announced after the completion of the hackathon."
       ]
     },
