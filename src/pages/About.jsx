@@ -80,7 +80,7 @@ function About() {
                       Institution's Innovation Council
                     </h3>
                     <p className="text-gray-300 font-['Arial'] text-sm font-semibold text-justify text-center">
-                      A premier engineering institution fostering innovation since 1984.
+                    After the inauguration of the Incubation facility on 23rd Oct. 2023, 8 start-up ideas have been selected for incubation. Total funding of Rs. 70,000/- has been received from the institute so far for the company registration purpose. Utilizing these funds, 2 companies named BrainSync Solutions Pvt. Ltd.  and LinkHive Pvt. Ltd.  have been registered under company law, section 8. One company named Dronology Innovation Private Limited has registered by themselves and generated the revenue of Rs. 3,00,000/- as well. Other start-ups are also in various phases of development and getting recognition and funds from various agencies.
                     </p>
                   </div>
                 </div>
