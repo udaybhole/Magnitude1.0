@@ -15,8 +15,8 @@ const Committees = () => {
         name: "Dr. Manish Sharma",
         position: "Hackathon Faculty Co-ordinator",
         image: "/SIR.jpg",
-        mail: "https://github.com",
-        linkedin: "https://linkedin.com",
+        mail: "msharma@dypcoeakurdi.ac.in",
+        linkedin: "https://www.linkedin.com/in/dr-manish-sharma-2bb7404a/",
         instagram: ""
       }
     ],
