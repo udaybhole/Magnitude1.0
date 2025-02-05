@@ -73,24 +73,162 @@ const Committees = () => {
         instagram: "https://www.instagram.com/sanap_prajwal/"
       }
     ],
-    maintainers: [
-      {
-        name: "UDAY BHOLE",
-        position: "Web Devlopment Lead",
-        image: "/UDAY.jpg",
-        mail: "udaybhole3104@gmail.com",
-        linkedin: "https://www.linkedin.com/in/uday-bhole/",
-        instagram: "https://www.instagram.com/_u_dayyy/"
-      },
-      {
-        name: "DINESH AHER",
-        position: "Web Devlopment Co-Lead",
-        image: "/dinesh.jpg",
-        mail: "https://Mail.com",
-        linkedin: "https://www.linkedin.com/in/dineshaher/",
-        instagram: "https://instagram.com/dinesh_aher2505"
-      },
-    ]
+    media: {
+      design: [
+        {
+          name: "ATHARVA WANI",
+          position: "DESIGN LEAD",
+          image: "/IMG_2753.jpeg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        },
+        {
+          name: "SANIKA KALASKAR",
+          position: "DESIGN LEAD",
+          image: "/Sanika recent.jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        },
+        {
+          name: "MAITHILI M",
+          position: "DESIGN CO-LEAD",
+          image: "/Maithili Co-lead.jpg",
+          mail: "https://Mail.com",
+          linkedin: "https://www.linkedin.com/in/dineshaher/",
+          instagram: "https://instagram.com/dinesh_aher2505"
+        },
+        {
+          name: "ASMITA KADAM",
+          position: "DESIGN CO-LEAD",
+          image: "/IMG_20250205_102221.jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        }
+      ],
+      socialMedia: [
+        {
+          name: "SEJAL PAWAR",
+          position: "SOCIAL MEDIA LEAD",
+          image: "/IMG_20250202_232133.jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        },
+        {
+          name: "RAM MANZA",
+          position: "SOCIAL MEDIA LEAD",
+          image: "/Ramkumar Manza Co_Lead.jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        },
+        {
+          name: "SAMPADA",
+          position: "SOCIAL MEDIA CO-LEAD",
+          image: "/IMG-20250204-WA0005.jpg",
+          mail: "https://Mail.com",
+          linkedin: "https://www.linkedin.com/in/dineshaher/",
+          instagram: "https://instagram.com/dinesh_aher2505"
+        },
+        {
+          name: "DIKSHA TAPKIRE",
+          position: "SOCIAL MEDIA CO-LEAD",
+          image: "/Diksha Tapkire Co-Lead.jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        }
+      ],
+      mediaTeam: [
+        {
+          name: "SHRIRANG VAIDYA",
+          position: "MEDIA LEAD",
+          image: "/IMG-20230628-WA0002.jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        },
+        {
+          name: "SUJAL PATIL",
+          position: "MEDIA CO-LEAD",
+          image: "/Sujal Patil.jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        }
+      ],
+      pr: [
+        {
+          name: "ROHAN MULIK",
+          position: "PR LEAD",
+          image: "/Rohan Mulik (Lead).jpg",
+          mail: "https://Mail.com",
+          linkedin: "https://www.linkedin.com/in/dineshaher/",
+          instagram: "https://instagram.com/dinesh_aher2505"
+        },
+        {
+          name: "VAIDEHI DESHMUKH",
+          position: "PR LEAD",
+          image: "/IMG_20241113_175738.jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        },
+        {
+          name: "PRATIK V",
+          position: "PR CO-LEAD",
+          image: "/Pratik(co-lead).jpg",
+          mail: "https://Mail.com",
+          linkedin: "https://www.linkedin.com/in/dineshaher/",
+          instagram: "https://instagram.com/dinesh_aher2505"
+        },
+        {
+          name: "SHIVAM K",
+          position: "PR CO-LEAD",
+          image: "/shivam co-lead.jpeg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        },
+        {
+          name: "VARUN NAGOTE",
+          position: "PR CO-LEAD",
+          image: "/Varun nagote co-lead.jpg",
+          mail: "https://Mail.com",
+          linkedin: "https://www.linkedin.com/in/dineshaher/",
+          instagram: "https://instagram.com/dinesh_aher2505"
+        },
+        {
+          name: "VEDANT AHER",
+          position: "PR CO-LEAD",
+          image: "/Vedant Aher (co-lead).jpg",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        }
+      ],
+      qa: [
+        {
+          name: "JAGDISH RAUT",
+          position: "QA LEAD",
+          image: "/jagdish.jpg",
+          mail: "https://Mail.com",
+          linkedin: "https://www.linkedin.com/in/dineshaher/",
+          instagram: "https://instagram.com/dinesh_aher2505"
+        },
+        {
+          name: "SHREYA GAIKWAD",
+          position: "QA LEAD",
+          image: "/Shreya Gaikwad.png",
+          mail: "udaybhole3104@gmail.com",
+          linkedin: "https://www.linkedin.com/in/uday-bhole/",
+          instagram: "https://www.instagram.com/_u_dayyy/"
+        }
+      ]
+    }
   };
 
   const sections = {
@@ -98,7 +236,7 @@ const Committees = () => {
     organizing: "ORGANIZING COMMITTEE",
     tech: "TECH COMMITTEE",
     management: "MANAGEMENT COMMITTEE",
-    maintainers: "WEBSITE MAINTAINER"
+    media: "MEDIA"
   };
 
   const CommitteeCard = ({ member }) => (
@@ -160,63 +298,128 @@ const Committees = () => {
         return 'flex justify-center';
       case 'management':
         return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
-      case 'maintainers':
+      case 'media':
         return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
       default:
         return 'grid grid-cols-1 md:grid-cols-3 gap-8';
     }
   };
 
-  return (
-    
-    <div className="relative min-h-screen py-16 px-4">
-      <VantaBackground /> 
-      
-      <div className="max-w-7xl mx-auto relative z-10">
-        <h1 className="text-4xl pt-10 md:text-5xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-700 via-purple-400 to-purple-50 bg-clip-text text-transparent">
-          Committees
-        </h1>
+  const renderMediaSection = () => {
+    if (activeSection !== 'media') return null;
 
-        <h4 className="text-1xl md:text-3xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-700 via-purple-400 to-purple-50 bg-clip-text text-transparent">
-          MEET OUR TEAM
-        </h4>
-
-        <div className="pt-4 flex flex-wrap justify-between items-center gap-4 mb-12 px-4">
-          {Object.entries(sections).map(([key, label]) => (
-            <button
-              key={key}
-              onClick={() => setActiveSection(key)}
-              className={`px-6 py-2 rounded-full text-sm md:text-base transition-all duration-300 ${
-                activeSection === key
-                  ? 'bg-purple-400 text-white shadow-lg shadow-purple-500/30 font-extrabold'
-                  : 'bg-black border border-purple-700 text-white hover:bg-purple-400 font-bold'
-              }`}
-            >
-              {label}
-            </button>
-          ))}
+    return (
+      <div className="w-full space-y-16">
+        {/* Design Team */}
+        <div>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">Design Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            {committees.media.design.map((member, index) => (
+              <CommitteeCard key={`design-${index}`} member={member} />
+            ))}
+          </div>
         </div>
 
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeSection}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className={`max-w-6xl pt-8 mx-auto ${getGridClass(activeSection)}`}
-            style={{
-              marginTop: '2rem',
-              marginBottom: '2rem',
-            }}
-          >
-            {committees[activeSection].map((member, index) => (
-              <CommitteeCard key={index} member={member} />
+        {/* Social Media Team */}
+        <div>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">Social Media Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            {committees.media.socialMedia.map((member, index) => (
+              <CommitteeCard key={`social-${index}`} member={member} />
             ))}
-          </motion.div>
-        </AnimatePresence>
-      </div>
-    </div>
-  );
-};
+          </div>
+        </div>
 
-export default Committees;
+        {/* Media Team */}
+        <div>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">Media Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            {committees.media.mediaTeam.map((member, index) => (
+              <CommitteeCard key={`media-${index}`} member={member} />
+            ))}
+          </div>
+        </div>
+
+        {/* PR Team */}
+        <div>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">PR Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            {committees.media.pr.map((member, index) => (
+              <CommitteeCard key={`pr-${index}`} member={member} />
+            ))}
+          </div>
+        </div>
+
+        {/* QA Team */}
+        <div>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">QA Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            {committees.media.qa.map((member, index) => (
+              <CommitteeCard key={`qa-${index}`} member={member} />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+
+  return (
+    
+      <div className="relative min-h-screen py-16 px-4">
+        <VantaBackground /> 
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <h1 className="text-4xl pt-10 md:text-5xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-700 via-purple-400 to-purple-50 bg-clip-text text-transparent">
+            Committees
+          </h1>
+  
+          <h4 className="text-1xl md:text-3xl font-extrabold font-['SpaceMission'] text-center mb-12 bg-gradient-to-r from-purple-700 via-purple-400 to-purple-50 bg-clip-text text-transparent">
+            MEET OUR TEAM
+          </h4>
+  
+          <div className="pt-4 flex flex-wrap justify-between items-center gap-4 mb-12 px-4">
+            {Object.entries(sections).map(([key, label]) => (
+              <button
+                key={key}
+                onClick={() => setActiveSection(key)}
+                className={`px-6 py-2 rounded-full text-sm md:text-base transition-all duration-300 ${
+                  activeSection === key
+                    ? 'bg-purple-400 text-white shadow-lg shadow-purple-500/30 font-extrabold'
+                    : 'bg-black border border-purple-700 text-white hover:bg-purple-400 font-bold'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+  
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeSection}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="max-w-6xl mx-auto"
+              style={{
+                marginTop: '2rem',
+                marginBottom: '2rem',
+              }}
+            >
+              {activeSection === 'media' ? (
+                renderMediaSection()
+              ) : (
+                <div className={getGridClass(activeSection)}>
+                  {Array.isArray(committees[activeSection]) && committees[activeSection].map((member, index) => (
+                    <CommitteeCard key={index} member={member} />
+                  ))}
+                </div>
+              )}
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
+    );
+  };
+
+  export default Committees;

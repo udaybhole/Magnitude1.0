@@ -91,10 +91,10 @@ function Home() {
 
 
       <div className= "hidden sm:block h-full">
-      <Spline
+      {/* <Spline
         scene="https://prod.spline.design/zwQ3a8L0q3LE8qea/scene.splinecode"
         style={{ width: '100%', height: '100%' }}
-      />
+      /> */}
       </div>
     </div>
 
