@@ -329,10 +329,10 @@ function Home() {
 </AnimatePresence>
 
 
-
+<CommunityPartners />
         <div className="max-w-5xl mx-auto py-20 px-4">
           <div className="relative">
-          <CommunityPartners />
+          
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
