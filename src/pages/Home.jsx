@@ -6,6 +6,57 @@ import { FaCode, FaMapMarkerAlt } from 'react-icons/fa';
 import Spline from '@splinetool/react-spline';
 import Footer from "../components/Footer";
 import VantaBackground from "../components/Vanat";
+
+function CommunityPartners() {
+  return (
+    <div className="py-16 bg-black">
+      <div className="container mx-auto px-4">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-2xl xs:text-3xl font-extrabold sm:text-4xl md:text-5xl font-['SpaceMission'] text-center mb-16 bg-gradient-to-r from-purple-600 via-purple-300 to-purple-50 bg-clip-text text-transparent"
+        >
+          COMMUNITY PARTNERS
+        </motion.h2>
+        <div className="flex flex-wrap justify-center items-center gap-12">
+          <motion.a 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            href="https://www.meetup.com/aws-pune/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <img 
+              src="/partner1.jpg" 
+              alt="AWS User Group Pune" 
+              className="h-24 object-contain"
+            />
+          </motion.a>
+          <motion.a 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            href="https://www.postman.com/postman-community-pune" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <img 
+              src="/partner2.jpg" 
+              alt="Postman Community Pune" 
+              className="h-24 object-contain"
+            />
+          </motion.a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Home() {
   const magnitudeText = "MAGNITUDE";
   const [count, setCount] = useState(0);
@@ -281,6 +332,7 @@ function Home() {
 
         <div className="max-w-5xl mx-auto py-20 px-4">
           <div className="relative">
+          <CommunityPartners />
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -289,6 +341,8 @@ function Home() {
             >
               EVENT TIMELINE
             </motion.h2>
+
+            
 
             <div className="absolute left-4 md:left-1/2 h-full w-px bg-gradient-to-b from-purple-600 via-purple-300 to-purple-100" />
 
