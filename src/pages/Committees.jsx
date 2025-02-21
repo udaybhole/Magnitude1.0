@@ -64,14 +64,14 @@ const Committees = () => {
         linkedin: "https://www.linkedin.com/in/parth-magar-339044288/",
         instagram: "https://www.instagram.com/sponge.exee/"
       },
-      {
-        name: "PRAJWAL SANAP",
-        position: "Mangement Committee",
-        image: "/PRAJWAL.jpg",
-        mail: "prajwalsanap123@gmail.com",
-        linkedin: "https://in.linkedin.com/in/prajwalsanap",
-        instagram: "https://www.instagram.com/sanap_prajwal/"
-      }
+      // {
+      //   name: "SHANTANU POKALE",
+      //   position: "Mangement Committee",
+      //   image: "/PRAJWAL.jpg",
+      //   mail: "prajwalsanap123@gmail.com",
+      //   linkedin: "https://in.linkedin.com/in/prajwalsanap",
+      //   instagram: "https://www.instagram.com/sanap_prajwal/"
+      // }
     ],
     media: {
       design: [
@@ -297,7 +297,7 @@ const Committees = () => {
       case 'tech':
         return 'flex justify-center';
       case 'management':
-        return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
+        return 'grid grid-cols-1 md:grid-cols-1 gap-8 place-items-center';
       case 'media':
         return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
       default:
