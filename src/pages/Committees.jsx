@@ -64,48 +64,47 @@ const Committees = () => {
         linkedin: "https://www.linkedin.com/in/parth-magar-339044288/",
         instagram: "https://www.instagram.com/sponge.exee/"
       },
-      // {
-      //   name: "SHANTANU POKALE",
-      //   position: "Mangement Committee",
-      //   image: "/PRAJWAL.jpg",
-      //   mail: "prajwalsanap123@gmail.com",
-      //   linkedin: "https://in.linkedin.com/in/prajwalsanap",
-      //   instagram: "https://www.instagram.com/sanap_prajwal/"
-      // }
+      {
+        name: "SHANTANU POKALE",
+        position: "Mangement Committee",
+        image: "/Shantanu.jpg",
+        linkedin: "https://www.linkedin.com/in/shantanu-pokale/",
+        instagram: "https://www.instagram.com/shantanupokale_/"
+      }
     ],
     media: {
+      hospitality: [
+        {
+          name: "SACHCHAITA HANGLOO",
+          position: "EVENT OPERATION LEAD",
+          image: "/Hanglooo.jpg",
+          linkedin: "https://www.linkedin.com/in/sachchaita-hangloo-374137279/",
+        }
+      ],
       design: [
         {
           name: "ATHARVA WANI",
           position: "DESIGN LEAD",
           image: "/IMG_2753.jpeg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+       
         },
         {
           name: "SANIKA KALASKAR",
           position: "DESIGN LEAD",
           image: "/Sanika recent.jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         },
         {
           name: "MAITHILI M",
           position: "DESIGN CO-LEAD",
           image: "/Maithili Co-lead.jpg",
-          mail: "https://Mail.com",
-          linkedin: "https://www.linkedin.com/in/dineshaher/",
-          instagram: "https://instagram.com/dinesh_aher2505"
+          
         },
         {
           name: "ASMITA KADAM",
           position: "DESIGN CO-LEAD",
           image: "/IMG_20250205_102221.jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         }
       ],
       socialMedia: [
@@ -113,33 +112,25 @@ const Committees = () => {
           name: "SEJAL PAWAR",
           position: "SOCIAL MEDIA LEAD",
           image: "/IMG_20250202_232133.jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         },
         {
           name: "RAM MANZA",
           position: "SOCIAL MEDIA LEAD",
           image: "/Ramkumar Manza Co_Lead.jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+          
         },
         {
           name: "SAMPADA",
           position: "SOCIAL MEDIA CO-LEAD",
           image: "/IMG-20250204-WA0005.jpg",
-          mail: "https://Mail.com",
-          linkedin: "https://www.linkedin.com/in/dineshaher/",
-          instagram: "https://instagram.com/dinesh_aher2505"
+          
         },
         {
           name: "DIKSHA TAPKIRE",
           position: "SOCIAL MEDIA CO-LEAD",
           image: "/Diksha Tapkire Co-Lead.jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         }
       ],
       mediaTeam: [
@@ -147,17 +138,13 @@ const Committees = () => {
           name: "SHRIRANG VAIDYA",
           position: "MEDIA LEAD",
           image: "/IMG-20230628-WA0002.jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         },
         {
           name: "SUJAL PATIL",
           position: "MEDIA CO-LEAD",
           image: "/Sujal Patil.jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+        
         }
       ],
       pr: [
@@ -165,49 +152,37 @@ const Committees = () => {
           name: "ROHAN MULIK",
           position: "PR LEAD",
           image: "/Rohan Mulik (Lead).jpg",
-          mail: "https://Mail.com",
-          linkedin: "https://www.linkedin.com/in/dineshaher/",
-          instagram: "https://instagram.com/dinesh_aher2505"
+        
         },
         {
           name: "VAIDEHI DESHMUKH",
           position: "PR LEAD",
           image: "/IMG_20241113_175738.jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         },
         {
           name: "PRATIK V",
           position: "PR CO-LEAD",
           image: "/Pratik(co-lead).jpg",
-          mail: "https://Mail.com",
-          linkedin: "https://www.linkedin.com/in/dineshaher/",
-          instagram: "https://instagram.com/dinesh_aher2505"
+        
         },
         {
           name: "SHIVAM K",
           position: "PR CO-LEAD",
           image: "/shivam co-lead.jpeg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         },
         {
           name: "VARUN NAGOTE",
           position: "PR CO-LEAD",
           image: "/Varun nagote co-lead.jpg",
-          mail: "https://Mail.com",
-          linkedin: "https://www.linkedin.com/in/dineshaher/",
-          instagram: "https://instagram.com/dinesh_aher2505"
+         
         },
         {
           name: "VEDANT AHER",
           position: "PR CO-LEAD",
           image: "/Vedant Aher (co-lead).jpg",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         }
       ],
       qa: [
@@ -215,17 +190,13 @@ const Committees = () => {
           name: "JAGDISH RAUT",
           position: "QA LEAD",
           image: "/jagdish.jpg",
-          mail: "https://Mail.com",
-          linkedin: "https://www.linkedin.com/in/dineshaher/",
-          instagram: "https://instagram.com/dinesh_aher2505"
+         
         },
         {
           name: "SHREYA GAIKWAD",
           position: "QA LEAD",
           image: "/Shreya Gaikwad.png",
-          mail: "udaybhole3104@gmail.com",
-          linkedin: "https://www.linkedin.com/in/uday-bhole/",
-          instagram: "https://www.instagram.com/_u_dayyy/"
+         
         }
       ]
     }
@@ -236,7 +207,7 @@ const Committees = () => {
     organizing: "ORGANIZING COMMITTEE",
     tech: "TECH COMMITTEE",
     management: "MANAGEMENT COMMITTEE",
-    media: "MEDIA"
+    media: "CORE TEAMS"
   };
 
   const CommitteeCard = ({ member }) => (
@@ -297,7 +268,7 @@ const Committees = () => {
       case 'tech':
         return 'flex justify-center';
       case 'management':
-        return 'grid grid-cols-1 md:grid-cols-1 gap-8 place-items-center';
+        return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
       case 'media':
         return 'grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center';
       default:
@@ -312,7 +283,15 @@ const Committees = () => {
       <div className="w-full space-y-16">
         {/* Design Team */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">Design Team</h2>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">EVENT OPERATION LEAD </h2>
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 place-items-center">
+            {committees.media.hospitality.map((member, index) => (
+              <CommitteeCard key={`design-${index}`} member={member} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">DESIGN TEAM</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             {committees.media.design.map((member, index) => (
               <CommitteeCard key={`design-${index}`} member={member} />
@@ -322,7 +301,7 @@ const Committees = () => {
 
         {/* Social Media Team */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">Social Media Team</h2>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">SOCIAL MEDIA TEAM</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             {committees.media.socialMedia.map((member, index) => (
               <CommitteeCard key={`social-${index}`} member={member} />
@@ -332,7 +311,7 @@ const Committees = () => {
 
         {/* Media Team */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">Media Team</h2>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">PHOTOGRAPHY & VIDEOGRAPHY TEAM</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             {committees.media.mediaTeam.map((member, index) => (
               <CommitteeCard key={`media-${index}`} member={member} />
@@ -342,7 +321,7 @@ const Committees = () => {
 
         {/* PR Team */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">PR Team</h2>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">PR TEAM</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             {committees.media.pr.map((member, index) => (
               <CommitteeCard key={`pr-${index}`} member={member} />
@@ -352,7 +331,7 @@ const Committees = () => {
 
         {/* QA Team */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">QA Team</h2>
+          <h2 className="text-2xl font-bold text-purple-400 mb-8 text-center">QA TEAM</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             {committees.media.qa.map((member, index) => (
               <CommitteeCard key={`qa-${index}`} member={member} />
